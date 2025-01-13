@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Desa Bangkalaloe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #f4a222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#10442c] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+        <div class="container mx-auto flex items-center">
+            <div class="flex items-center">
+                <img 
+                    alt="Logo of Jeneponto" 
+                    class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                    height="70" 
+                    src="images/logo.png" 
+                    width="70" 
+                />
+                <div>
+                    <h1 class="text-[#f4a222] text-xl font-bold tracking-wider">Desa Bangkalaloe</h1>
+                    <p class="text-white text-sm opacity-80">Kabupaten Jeneponto</p>
+                </div>
+            </div>
+            <nav class="ml-auto">
+                <ul class="flex space-x-4 text-white">
+                    <li class="group relative">
+                        <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="index.html"
+                        >
+                            Home
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="profildesa.html"
+                        >
+                            Profil Desa
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="infografis.html"
+                        >
+                            Infografis
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="umkm.html"
+                        >
+                            UMKM
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="potensidesa.html"
+                        >
+                            Potensi Desa
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="about.html"
+                        >
+                            About
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="relative">
+        <img alt="Nature Cottage" class="w-full h-96 object-cover" height="600" src="images/potensii.jpg" width="1920"/>
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-6">
+            <h1 class="text-4xl md:text-5xl font-bold transition-transform transform hover:scale-105">
+                Potensi Desa
+            </h1>
+            <p class="mt-4 text-lg md:text-xl transition-opacity duration-300 hover:opacity-80">
+                Mengenal Lebih Jauh Potensi Desa Bangkalaloe
+            </p>
+        
+        </div>
+    </section>
+        </div>
+       </section>
+       <!-- About Section -->
+
+
+
+
+
+
+
+       <section class="py-16 bg-gray-200">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center justify-center mb-8">  
+                    <div class="flex items-center mb-1">
+                        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                        <h1 class="text-3xl font-bold text-black text-shadow">
+                            Komoditas Unggulan Berdasarkan Luas Tanam	
+                        </h1>
+                    </div>
+                
+                    <style>
+                        .text-shadow {
+                            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
+                        }
+                    </style>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="relative">
+                        <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Philodendron plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/padi.jpg" width="600"/></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-6 flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold text-white">
+                                    Padi
+                                </h2>
+                                <p class="text-white mt-2">
+                                    Tersebar Di Seluruh Penjuru Desa Bangkalaloe
+                                </p>
+                            </div>
+                            <!-- <div class="self-end">
+                                <button class="bg-white text-black rounded-full p-2">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Calathea plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/jagung.jpg" width="600"/></div>
+                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-6 flex flex-col justify-between">
+                            <div>
+                                <h2 class="text-3xl font-bold text-white">
+                                    Jagung
+                                </h2>
+                                <p class="text-white mt-2">
+                                    Tersebar Di Seluruh Penjuru Desa Bangkalaloe
+                                </p>
+                            </div>
+                            <!-- <div class="self-end">
+                                <button class="bg-white text-black rounded-full p-2">
+                                    <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+        </div>
+       </section>
+
+
+
+       <section class="py-16 bg-[#10442c] text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">  
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-3xl font-bold text-[#f4a222] text-shadow">
+                        Komoditas Unggulan Berdasarkan Nilai Ekonomi	
+                    </h1>
+                </div>
+            
+                <style>
+                    .text-shadow {
+                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
+                    }
+                </style>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="images/bawangmerah.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Bawang Merah
+                            </h2>
+                            <p class="text-white mt-2">
+                                Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="images/cabeasli.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Cabai
+                            </h2>
+                            <p class="text-white mt-2">
+                                Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Another plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/lontar.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Gula Merah
+                            </h2>
+                            <p class="text-white mt-2">
+                                Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+  
+    <section class="py-6 bg-gray-200 text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">  
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-green-800 h-12 mr-4"></div>
+                    <h1 class="text-3xl font-bold text-black text-shadow">
+                      Potensi Alam
+                    </h1>
+                </div>
+            
+                <style>
+                    .text-shadow {
+                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
+                    }
+                </style>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden">
+                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="images/hutan.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Hutan Desa seluas 2 Ha
+                            </h2>
+                            <!-- <p class="text-white mt-2">
+                                Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.
+                            </p> -->
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden">
+                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="images/batuleppa.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Area Swafoto Batuleppa
+                            </h2>
+                            <!-- <p class="text-white mt-2">
+                                Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.
+                            </p> -->
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden">
+                        <img alt="Another plant leaves" class="w-full h-full object-cover" height="400" src="images/sungai.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Sungai
+                            </h2>
+                            <!-- <p class="text-white mt-2">
+                                Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.
+                            </p> -->
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-200">
+        <div class="container mx-auto p-4">
+         <div class="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+          <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa1.jpg" width="300"/>
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa2.jpg" width="300"/>
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa3.jpg" width="300"/>
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa4.jpg" width="300"/>
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa5.jpg" width="300"/>
+           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="batuleppa/batuleppa6.jpg" width="300"/>
+          </div>
+          <div class="md:w-1/2 p-6">
+           <div class="flex items-center mb-4">
+            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            </div>
+            <h1 class="text-4xl font-bold text-gray-800">
+             Batu Leppa
+            </h1>
+           </div>
+           <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+            Batu Leppa adalah destinasi wisata yang terletak di Dusun Linrunloe, Desa Bangkalaloe, Kabupaten Jeneponto, Sulawesi Selatan. Tempat ini menawarkan keindahan alam yang asri, dikelilingi oleh hutan hijau yang rimbun. Pengunjung dapat menikmati suasana alam yang tenang dan udara yang segar, menjadikannya tempat ideal untuk melepas penat dari kesibukan sehari-hari.
+           </p>
+           <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+            Untuk mencapai Batu Leppa, pengunjung dapat menempuh perjalanan dari pusat Kota Jeneponto dengan kendaraan pribadi atau transportasi umum. Akses jalan menuju lokasi cukup baik, namun disarankan untuk menggunakan kendaraan yang sesuai dengan medan. Sebelum berkunjung, sebaiknya mempersiapkan perbekalan yang cukup, mengingat fasilitas di sekitar lokasi mungkin terbatas.
+           </p>
+           <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+            Dengan pesona alam dan budaya yang ditawarkan, Batu Leppa menjadi destinasi yang layak dikunjungi bagi para pencinta alam dan budaya.
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+    
+        <!-- Modal -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+            <span class="absolute bottom-4 left-4 text-white cursor-pointer" onclick="closeModal()">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 12 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H3m0 0l6 6m-6-6l6-6" />
+                </svg>
+            </span>
+            <img id="modalImage" class="max-w-full max-h-full" src="" alt="Zoomed Image"/>
+        </div>
+    </section>
+    
+    <script>
+        function openModal(src) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = src;
+            modal.classList.remove('hidden');
+        }
+    
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('hidden');
+        }
+    </script>
+
+
+
+
+       <section class="py-16 bg-[#10442c] text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">  
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-3xl font-bold text-[#f4a222] text-shadow">
+                        Komoditas Unggulan Berdasarkan Nilai Ekonomi	
+                    </h1>
+                </div>
+            
+                <style>
+                    .text-shadow {
+                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
+                    }
+                </style>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="images/bawangmerah.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Bawang Merah
+                            </h2>
+                            <p class="text-white mt-2">
+                                Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="images/cabai.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Cabai
+                            </h2>
+                            <p class="text-white mt-2">
+                                Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Another plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/gulamerah.jpg" width="600"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">
+                                Gula Merah
+                            </h2>
+                            <p class="text-white mt-2">
+                                Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.
+                            </p>
+                        </div>
+                        <!-- <div class="self-end">
+                            <button class="bg-white text-black rounded-full p-2">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+       <section class="py-16 bg-[#10442c] text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <div class="grid md:grid-cols-2 gap-12">
+
+            <div>
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-4xl font-bold text-[#f4a222]">Komoditas Unggulan <span class="text-4xl text-yellow"> Berdasarkan Nilai Ekonomi</span></h1>
+                </div>
+                <h2 class="text-3xl mt-2 font-bold text-white">
+                 Bawang Merah
+                </h2>
+                <p class="mt-1 text-gray-200">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+                </p>
+                <h2 class="text-3xl mt-2 font-bold text-white">
+                    Lombok
+                   </h2>
+                <p class="mt-1 text-gray-200">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+                </p>
+                <h2 class="text-3xl mt-2 font-bold text-white">
+                    Gula Merah
+                   </h2>
+                <p class="mt-1 text-gray-200">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+                </p>
+               </div>
+          <div>
+           <img alt="Waterfall" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/yhJERohascZKGBpbpucL4jebMs8J57fHK5tAiG3i3RUnpvenA.jpg" width="600"/>
+          </div>
+         
+         </div>
+        </div>
+       </section>
+
+
+
+       
+       <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <div class="grid md:grid-cols-2 gap-12">
+          <div>
+           <img alt="Waterfall" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/yhJERohascZKGBpbpucL4jebMs8J57fHK5tAiG3i3RUnpvenA.jpg" width="600"/>
+          </div>
+          <div>
+           <h2 class="text-3xl font-bold text-green-900">
+            Crafting Memorable Nature Escapes
+           </h2>
+           <p class="mt-4 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <p class="mt-4 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <p class="mt-4 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <p class="mt-4 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+
+
+
+
+
+
+
+
+
+       <!-- Cottages Section -->
+       <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <h2 class="text-3xl font-bold text-green-900 text-center">
+          Chill Out in Nature's Chill Zone
+         </h2>
+         <div class="mt-12 grid md:grid-cols-3 gap-12">
+          <div>
+           <img alt="Cottage 1" class="w-full h-auto rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/OHYwZ9S2PK4sEF2CCDY37FsTDpIBhdCeNtStuMawLHP10XfTA.jpg" width="400"/>
+          </div>
+          <div>
+           <img alt="Cottage 2" class="w-full h-auto rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/fsXYv5ycufjJVkL8F98RvqFxvc2KoBvTxz2e0Ybj6SmGTf6PB.jpg" width="400"/>
+          </div>
+          <div>
+           <img alt="Cottage 3" class="w-full h-auto rounded-lg" height="300" src="https://storage.googleapis.com/a1aa/image/Oq3Jr6XydaoEOdeycB6iH9edbVJw4bTQ1JsP9pJkLSw5pvenA.jpg" width="400"/>
+          </div>
+         </div>
+        </div>
+       </section>
+
+
+
+
+
+       
+       <!-- Amenities Section -->
+       <section class="py-16 bg-green-900 text-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <h2 class="text-3xl font-bold text-center">
+          Nature's Cozy Retreats Await
+         </h2>
+         <div class="mt-12 grid md:grid-cols-4 gap-12 text-center">
+          <div>
+           <i class="fas fa-utensils text-4xl">
+           </i>
+           <h3 class="mt-4 text-xl font-bold">
+            Breakfast
+           </h3>
+           <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           </p>
+          </div>
+          <div>
+           <i class="fas fa-concierge-bell text-4xl">
+           </i>
+           <h3 class="mt-4 text-xl font-bold">
+            24h Service
+           </h3>
+           <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           </p>
+          </div>
+          <div>
+           <i class="fas fa-users text-4xl">
+           </i>
+           <h3 class="mt-4 text-xl font-bold">
+            Family
+           </h3>
+           <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           </p>
+          </div>
+          <div>
+           <i class="fas fa-shield-alt text-4xl">
+           </i>
+           <h3 class="mt-4 text-xl font-bold">
+            Security
+           </h3>
+           <p class="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+
+
+
+
+
+       
+       <!-- Activities Section -->
+       <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <div class="grid md:grid-cols-2 gap-12">
+          <div>
+           <img alt="Activities" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/yZnvy6ufsd2oWKgYcbhhn2rgfj1eNQr7Yw7uPZapYFgZTf6PB.jpg" width="600"/>
+          </div>
+          <div>
+           <h2 class="text-3xl font-bold text-green-900">
+            Adventure Awaits Beyond Your Doorstep
+           </h2>
+           <ul class="mt-4 space-y-4">
+            <li class="flex items-center">
+             <i class="fas fa-fish text-2xl text-green-900">
+             </i>
+             <span class="ml-4 text-lg">
+              Fishing
+             </span>
+            </li>
+            <li class="flex items-center">
+             <i class="fas fa-water text-2xl text-green-900">
+             </i>
+             <span class="ml-4 text-lg">
+              Kayaking
+             </span>
+            </li>
+            <li class="flex items-center">
+             <i class="fas fa-mountain text-2xl text-green-900">
+             </i>
+             <span class="ml-4 text-lg">
+              Hiking
+             </span>
+            </li>
+            <li class="flex items-center">
+             <i class="fas fa-bicycle text-2xl text-green-900">
+             </i>
+             <span class="ml-4 text-lg">
+              ATV
+             </span>
+            </li>
+           </ul>
+          </div>
+         </div>
+        </div>
+       </section>
+       <!-- Testimonials Section -->
+       <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <h2 class="text-3xl font-bold text-green-900 text-center">
+          See Why Guests Love Our Natura Cottages
+         </h2>
+         <div class="mt-12 grid md:grid-cols-3 gap-12">
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+           <p class="text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <div class="mt-4 flex items-center">
+            <img alt="Guest 1" class="h-12 w-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/lCF8jWaDXyLeRakfm7DzlZHejX5D71TExe1N62H0MLZSne1fE.jpg" width="50"/>
+            <div class="ml-4">
+             <p class="text-lg font-bold">
+              Guest 1
+             </p>
+             <p class="text-gray-600">
+              Location 1
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+           <p class="text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <div class="mt-4 flex items-center">
+            <img alt="Guest 2" class="h-12 w-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/1eOJTfWe3dKJQIeG6cqw9jifYp0FZKhffLBlHeDsZFZJhpvenA.jpg" width="50"/>
+            <div class="ml-4">
+             <p class="text-lg font-bold">
+              Guest 2
+             </p>
+             <p class="text-gray-600">
+              Location 2
+             </p>
+            </div>
+           </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-lg">
+           <p class="text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+           <div class="mt-4 flex items-center">
+            <img alt="Guest 3" class="h-12 w-12 rounded-full" height="50" src="https://storage.googleapis.com/a1aa/image/WwF7qRcmNe16EqTCbeJG4VEAagxex5PP8OsaEBNOUkSdTf6PB.jpg" width="50"/>
+            <div class="ml-4">
+             <p class="text-lg font-bold">
+              Guest 3
+             </p>
+             <p class="text-gray-600">
+              Location 3
+             </p>
+            </div>
+           </div>
+          </div>
+         </div>
+        </div>
+       </section>
+       <!-- News Section -->
+       <section class="py-16 bg-white">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <h2 class="text-3xl font-bold text-green-900 text-center">
+          Follow the Latest News
+         </h2>
+         <div class="mt-12 grid md:grid-cols-2 gap-12">
+          <div>
+           <img alt="News 1" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/FeJfZnfPtfU6zSfDkZVB00UBinmiFrZTNadg0BTNzUMuO91fE.jpg" width="600"/>
+           <h3 class="mt-4 text-xl font-bold">
+            10 Enchanting Nature Cottages for Your Next Getaway
+           </h3>
+           <p class="mt-2 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+          <div>
+           <img alt="News 2" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/zf2iOfNY4OlIJk188XbDw8ZSmKN2WIzfsEegwGOJEN8Vme1fE.jpg" width="600"/>
+           <h3 class="mt-4 text-xl font-bold">
+            The Ultimate Guide to Finding...
+           </h3>
+           <p class="mt-2 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+          <div>
+           <img alt="News 3" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/Ma1uD4wnbFKnL9htFtQEImypTPaB5tnktJ8y7WHsCxUa6rfJA.jpg" width="600"/>
+           <h3 class="mt-4 text-xl font-bold">
+            Experience Tranquility: Top Nature Cottages...
+           </h3>
+           <p class="mt-2 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+          <div>
+           <img alt="News 4" class="w-full h-auto rounded-lg" height="400" src="https://storage.googleapis.com/a1aa/image/VTdePdZ674QQfEqzZLXfd1bleSQu71IctWG46mdo1A0Kne1fE.jpg" width="600"/>
+           <h3 class="mt-4 text-xl font-bold">
+            Cozy Escapes: Exploring the Charms...
+           </h3>
+           <p class="mt-2 text-gray-700">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+         </div>
+        </div>
+       </section>
+       <!-- Footer -->
+       <footer class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+         <div class="grid md:grid-cols-3 gap-12">
+          <div>
+           <h3 class="text-xl font-bold">
+            NATURA
+           </h3>
+           <p class="mt-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi, euismod consectetur nisi nisl euismod.
+           </p>
+          </div>
+          <div>
+           <h3 class="text-xl font-bold">
+            Quick Links
+           </h3>
+           <ul class="mt-4 space-y-2">
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              Home
+             </a>
+            </li>
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              About
+             </a>
+            </li>
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              Cottages
+             </a>
+            </li>
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              Activities
+             </a>
+            </li>
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              Pages
+             </a>
+            </li>
+            <li>
+             <a class="hover:text-yellow-500" href="#">
+              Contact
+             </a>
+            </li>
+           </ul>
+          </div>
+          <div>
+           <h3 class="text-xl font-bold">
+            Contact Us
+           </h3>
+           <p class="mt-4">
+            +1 800 123 4567
+           </p>
+           <p class="mt-2">
+            info@natura.com
+           </p>
+           <p class="mt-2">
+            123 Nature St, Green City, USA
+           </p>
+          </div>
+         </div>
+         <div class="mt-12 text-center">
+          <p>
+           © 2023 Natura Cottages. All rights reserved.
+          </p>
+         </div>
+        </div>
+       </footer>
+      
+
+
+
+
+
+    <style>
+         body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <script>
+        // Script untuk mengatur navbar aktif
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan URL halaman saat ini
+            const currentLocation = location.pathname.split('/').pop();
+            
+            // Pilih semua link navigasi
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Loop melalui setiap link
+            navLinks.forEach(link => {
+                // Tambahkan event listener klik
+                link.addEventListener('click', function() {
+                    // Hapus kelas active dari semua link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    // Tambahkan kelas active ke link yang diklik
+                    this.classList.add('active');
+                });
+
+                // Tandai link yang sesuai dengan halaman saat ini
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    </script>
+</body>
+</html>

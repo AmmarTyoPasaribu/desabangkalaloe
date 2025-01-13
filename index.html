@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Desa Bangkalaloe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #f4a222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#10442c] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+    <div class="container mx-auto flex items-center">
+        <div class="flex items-center">
+            <img 
+                alt="Logo of Jeneponto" 
+                class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                height="70" 
+                src="images/logo.png" 
+                width="70" 
+            />
+            <div>
+                <h1 class="text-[#f4a222] text-xl font-bold tracking-wider">Desa Bangkalaloe</h1>
+                <p class="text-white text-sm opacity-80">Kabupaten Jeneponto</p>
+            </div>
+        </div>
+        <nav class="ml-auto">
+            <ul class="flex space-x-4 text-white">
+                <li class="group relative">
+                    <a 
+                    class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="index.html"
+                    >
+                        Home
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+                <li class="group relative">
+                    <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="profildesa.html"
+                    >
+                        Profil Desa
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+                <li class="group relative">
+                    <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="infografis.html"
+                    >
+                        Infografis
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+                <li class="group relative">
+                    <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="umkm.html"
+                    >
+                        UMKM
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+                <li class="group relative">
+                    <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="potensidesa.html"
+                    >
+                        Potensi Desa
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+                <li class="group relative">
+                    <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                        group-hover:text-white 
+                        transition-all duration-300" 
+                        href="about.html"
+                    >
+                        About
+                        <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+<body class="bg-gray-200">
+    <div class="relative">
+        <img alt="Background image of a park with a clock tower and trees" class="w-full h-[400px] object-cover" height="400" src="images/home.jpg" width="1920"/>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#10442c] to-transparent"></div>
+        <div class="absolute inset-0 flex items-center justify-start p-10">
+            <div class="text-white">
+                <div class="border-l-4 border-green-500 pl-4">
+                    <h1 class="text-3xl text-[#f4a222] font-bold" style="font-family: 'Poppins', sans-serif;">Selamat Datang,</h1>
+                    <h2 class="text-4xl font-bold" style="font-family: 'Poppins', sans-serif;">
+                        Di Website Profil
+                        <br/>
+                        Desa Bangkalaloe
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-4 right-4 flex space-x-4">
+            <img alt="Logo 1" class="w-20 h-20 rounded-full" height="100" src="images/logo.png" width="100"/>
+            <img alt="Logo 2" class="w-20 h-20 rounded-full" height="100" src="images/jenepontologo.png" width="100"/>
+        </div>
+    </div>
+
+    <div class="container mx-auto px-8 p-4 text-gray-800">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-2/3">
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-4xl font-bold text-gray-800" style="font-family: 'Poppins', sans-serif;">Profil</h1>
+                </div>
+                <h2 class="text-2xl text-gray-500 mb-4" style="font-family: 'Poppins', sans-serif;">Desa Bangkalaloe</h2>
+                <p class="mb-4 text-justify mr-4" style="font-family: 'Poppins', sans-serif;">
+                    Desa Bangkalaloe merupakan salah satu Desa yang ada di Kecamatan Bangkalaloe Kabupaten Jeneponto Provinsi Sulawesi Selatan. Asal kata Bangkalaloe sendiri terdiri dari dua kata, yaitu "Bangkala" yang berarti sejenis pohon bertajuk ketapang & mengkal atau bakal masak/matang, dan kata "loe" yang berarti banyak.
+                </p>
+                <p class="mb-4 text-justify mr-4" style="font-family: 'Poppins', sans-serif;">
+                    Luas wilayah Desa ini seluas 782,2 Hektar Atau 7,85 Km bujur sangkar. Desa ini berbatasan dengan Desa Datara di utara, Desa Karelayu dan Desa Balubungan di selatan, Desa Jombe dan Desa Tanjonga di timur, Desa Balumbungan dan desa Baraya di barat. 
+                </p>
+                <p class="mb-4 text-justify mr-4" style="font-family: 'Poppins', sans-serif;">
+                    Desa ini memiliki berbagai jenjang pendidikan seperti TK, SD, SMP Sederajat, SMK Sederajat, PAUD. Juga memiliki beberapa Masjid, musholla, puskesmas pembantu dan poskedes. Desa Bangkalaloe sendiri memiliki 3 Dusun dan 15 RK.
+                </p>
+            </div>
+            <div class="md:w-1/3 flex justify-center md:justify-end">
+                <div class="text-center w-full">
+                    <img 
+                        src="images/tuugu.jpg" 
+                        alt="Lokasi Desa Bangkalaloe" 
+                        class="w-full h-400 object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+                    />
+                    <p class="text-sm text-gray-500 mt-2 font-semibold tracking-wide">
+                        Desa Bangkalaloe, Kecamatan Bangkalaloe, Jeneponto
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto px-8 p-4 bg-[#10442c] text-white">
+        <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/3 flex justify-center md:justify-end">
+                <div class="text-center">
+                    <img alt="Peta desa bangkalaloe" class="border border-gray-600" height="600" src="images/Sejarah.jpg" width="400"/>
+                    <p class="text-sm text-[#f4a222] mt-2">Gambar Baliho Sejarah Desa Bangkalaloe</p>
+                </div>
+            </div>
+            <div class="md:w-2/3 ml-4">
+                <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-4xl font-bold text-[#f4a222]" style="font-family: 'Poppins', sans-serif;">Sejarah</h1>
+                </div>
+                <h2 class="text-2xl text-gray-300 mb-4"style="font-family: 'Poppins', sans-serif;">Desa Bangkalaloe</h2>
+                <p class="mb-4 text-justify text-gray-200"style="font-family: 'Poppins', sans-serif;">
+                    Pokobulo dipakai untuk menandai kejadian pada tahun sekitar 1500 M.ditemukannya seorang gadis kecil yang terbawa arus sungai di daerah Marrung terapung di atas Bonggol Rumpun Bambu. Sejak saat itu,penamaan Pokobulo digunakan untuk menyebut daerah kekuasaan dan pemerintahan Toddo Bangkala.
+                </p>
+                <p class="mb-4 text-justify text-gray-200"style="font-family: 'Poppins', sans-serif;">
+                    Pada tahun 1968 istilah Toddo diganti menjadi 'Bori atau lingkungan,maka, terbentuklah Lingkungan Pokobulo yang berada di bawah naungan Bori Balumbungang.
+                </p>
+                <p class="mb-4 text-justify text-gray-200"style="font-family: 'Poppins', sans-serif;">
+                    Pada tahun 1983 Pemerintah Kabupaten Jeneponto mengadakan pemekaran desa, sehingga Lingkungan Pokobulo menjadi Desa Persiapan: Bangkalaloe yang membina tiga dusun, yaitu Dusun Pokobulo, Dusun Linrungloe, dan Dusun Joko. Desa Bangkalaloe berdiri secara defenitif pada tanggal 2 Mei 1986.
+                </p>
+                <p class="mb-4 text-justify text-gray-200"style="font-family: 'Poppins', sans-serif;">
+                    Adapun Bangkalaloe terdiri dari dua kata, yaitu "Bangkala" yang berarti sejenis pohon bertajuk ketapang 2)mengkal atau bakal masak/matang, dan kata "loe" yang berarti banyak. Sehingga sering diartikan sebagai sebuah lokasi dengan situasi banyak terdapat pohon bangkala atau mengusung makna simbolik bahwasanya biarkan banyak yang mengkal, tetapi tetapkan satu yang matang.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="max-w-6xl mx-auto p-4">
+        <div class="flex items-center mb-1">
+                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
+                    <h1 class="text-4xl font-bold text-gray-800">Peta Lokasi Desa</h1>
+                </div>
+        <p class="text-gray-500">Peta Lokasi Desa Bangkalaloe</p>
+        <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="bg-white p-6 rounded-lg shadow">
+            <h2 class="text-2xl font-bold text-gray-800">Desa Bangkalaloe</h2>
+            <hr class="my-4" />
+            <p class="text-gray-500 font-semibold">Batas Desa</p>
+            <div class="grid grid-cols-2 gap-4 mt-2">
+              <div>
+                <p class="text-gray-500">Utara</p>
+                <p class="text-gray-800">
+                    Desa Datara
+                </p>
+              </div>
+              <div>
+                <p class="text-gray-500">Timur</p>
+                <p class="text-gray-800">Desa Jombe dan Desa Tanjongan</p>
+              </div>
+              <div>
+                <p class="text-gray-500">Selatan</p>
+                <p class="text-gray-800">Desa Karelayu dan Desa Balumbungang</p>
+              </div>
+              <div>
+                <p class="text-gray-500">Barat</p>
+                <p class="text-gray-800">Desa Balumbungang dan Desa Barayya</p>
+              </div>
+            </div>
+            <hr class="my-4" />
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <p class="text-gray-500 font-semibold">Luas Desa</p>
+                <p class="text-gray-800">7.850.000 m²</p>
+              </div>
+              <div>
+                <p class="text-gray-500 font-semibold">Jumlah Penduduk</p>
+                <p class="text-gray-800">3.107 Jiwa</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow">
+            <div class="text-center w-full">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63528.86884692953!2d119.50779397530912!3d-5.6458395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2 dbee1d4b4a993db%3A0x1daea3b37efcd95!2sBangkalaloe%2C%20Jeneponto%20Regency%2C%20South%20Sulawesi%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1719124800000!5m2!1sen!2sus&t=k" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="rounded-lg shadow-md"
+                ></iframe>
+                <p class="text-sm text-gray-500 mt-2">
+                    Lokasi Desa Bangkalaloe, Kecamatan Bangkalaloe, Jeneponto
+                </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="flex items-center justify-center mt-4 mb-8">
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-gray-800 mb-8">Data Monografi</h1>
+            <div class="flex justify-center space-x-8">
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-800">3</p>
+                    <p class="text-gray-500">Dusun</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-800">3.107</p>
+                    <p class="text-gray-500">Jumlah Penduduk</p>
+                </div>
+                <div class=" text-center">
+                    <p class="text-4xl font-bold text-blue-800">7,85 Km<sup>2</sup></p>
+                    <p class="text-gray-500">Luas Kelurahan</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-800">939</p>
+                    <p class="text-gray-500">Kepala Keluarga</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-blue-800">15</p>
+                    <p class="text-gray-500">RK</p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="#" class="text-green-500 flex items-center justify-center">
+                    <i class="fas fa-arrow-right mr-2"></i> Selengkapnya
+                </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+      // Script untuk mengatur navbar aktif
+      document.addEventListener('DOMContentLoaded', function() {
+          // Dapatkan URL halaman saat ini
+          const currentLocation = location.pathname.split('/').pop();
+          
+          // Pilih semua link navigasi
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          // Loop melalui setiap link
+          navLinks.forEach(link => {
+              // Tambahkan event listener klik
+              link.addEventListener('click', function() {
+                  // Hapus kelas active dari semua link
+                  navLinks.forEach(l => {
+                      l.classList.remove('active');
+                  });
+                  
+                  // Tambahkan kelas active ke link yang diklik
+                  this.classList.add('active');
+              });
+
+              // Tandai link yang sesuai dengan halaman saat ini
+              if(link.getAttribute('href') === currentLocation) {
+                  link.classList.add('active');
+              }
+          });
+
+         // Modal Monography
+         const moreDetailsLink = document.querySelector('.mt-8 a');
+            const modal = document.getElementById('monographyModal');
+            const closeModalBtn = document.getElementById('closeModal');
+
+            // Fungsi untuk membuka modal
+            moreDetailsLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                modal.classList.remove('hidden');
+            });
+
+            // Fungsi untuk menutup modal
+            closeModalBtn.addEventListener('click', function() {
+                modal.classList.add('hidden');
+            });
+
+            // Menutup modal jika mengklik di luar area modal
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <div id="monographyModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
+        <div class="bg-gray-200 p-8 rounded-lg shadow-lg max-w-2xl w-full relative my-8 max-h-[90vh] overflow-y-auto">
+            <button id="closeModal" class="sticky top-0 right-0 z-10 bg-white text-gray-500 text-3xl float-right clear-both mb-4">&times;</button>
+            
+            <div class="clear-both">
+                <div class="flex justify-between items-center mb-6">
+                    <h1 class="text-2xl font-bold text-gray-800">Detail Data Monografi Desa Bangkalaloe</h1>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-gray-500">Provinsi</p>
+                            <p class="text-gray-800 font-semibold">Sulawesi Selatan</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Kode Pos</p>
+                            <p class="text-gray-800 font-semibold">92351</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Kabupaten/Kota</p>
+                            <p class="text-gray-800 font-semibold">Jeneponto</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Jumlah Dusun</p>
+                            <p class="text-gray-800 font-semibold">3</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Kecamatan</p>
+                            <p class="text-gray-800 font-semibold">Bontoramba</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Jumlah RK</p>
+ <p class="text-gray-800 font-semibold">15</p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p class="text-gray-500">Luas Wilayah (Km Persegi)</p>
+                            <p class="text-gray-800 font-semibold">7,85</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Jumlah Penduduk</p>
+                            <p class="text-gray-800 font-semibold">± 3.107 </p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Jumlah Keluarga Petani</p>
+                            <p class="text-gray-800 font-semibold">± 539 </p>
+                        </div>
+                        <div>
+                            <p class="text-gray-500">Jumlah Kepala Keluarga</p>
+                            <p class="text-gray-800 font-semibold">± 939 </p>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <h2 class="text-xl font-bold text-gray-800 mb-4">Profesi Penduduk</h2>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <p class="text-gray-500">PNS</p>
+                                <p class="text-gray-800 font-semibold">± 247  </p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">TNI / POLRI</p>
+                                <p class="text-gray-800 font-semibold">± 41</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Wiraswasta / pedagang</p>
+                                <p class="text-gray-800 font-semibold">± 331</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Petani</p>
+                                <p class="text-gray-800 font-semibold">± 1521</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Peternak</p>
+                                <p class="text-gray-800 font-semibold">± 211</p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Jasa</p>
+                                <p class="text-gray-800 font-semibold">± 37 </p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Pekerja Seni</p>
+                                <p class="text-gray-800 font-semibold">± 5 </p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Pensiunan</p>
+                                <p class="text-gray-800 font-semibold">± 206  </p>
+                            </div>
+                            <div>
+                                <p class="text-gray-500">Tidak Bekerja</p>
+                                <p class="text-gray-800 font-semibold">± 340 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <div class="bg-[#10442c] text-white">
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/jenepontologo.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logooposko.png" />
+                    <img alt="Logo 3" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png"/>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#f4a222] font-bold">Desa Bangkalaloe</h1>
+                    <p class="text-xs text-gray-300">Kec. Bontoramba, Kab. Jeneponto, Sulawesi Selatan</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <a class="text-white text-sm hover:text-blue-300 transition-colors" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/Bangkalaloe,+Kec.+Bontoramba,+Kabupaten+Jeneponto,+Sulawesi+Selatan/@-5.6023186,119.6967312,5680m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2db9348c91f6a2b9:0x4e3e1e9fbe611c9f!8m2!3d-5.6033797!4d119.7136456!16s%2Fg%2F122jxcbh!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </a>
+                    <a class="text-white text-sm hover:text-gray-300 transition-colors" href="#">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#f4a222] font-bold">Website Profil Desa</h2>
+                    <p class="text-xs text-gray-300">
+                        Website profil Desa merupakan situs web yang memuat informasi dasar mengenai desa, sejarah, visi dan misi desa, sampai dengan peta wilayah desa.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website ini dibuat oleh Ammar Tyo Pasaribu, Mahasiswa KKN Universitas Hasanuddin Gelombang 113 Desa Bangkalaloe pada Januari 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Situs web profil ini dibuat untuk tujuan promosi dan publisitas Desa Bangkalaloe agar lebih dikenal oleh khalayak ramai baik di dalam maupun di luar Desa Bangkalaloe.
+                    </p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <h2 class="text-base text-[#f4a222]     font-bold">Kode QR Website</h2>
+                    <img 
+                        alt="QR Code" 
+                        class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" 
+                        height="100" 
+                        src="https://storage.googleapis.com/a1aa/image/VuAMxd4XGNKINFSMeQ8RhRZBri9LfgJDarnT8OsT2GnDEDenA.jpg" 
+                        width="100"
+                    />
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Desa Bangkalaloe - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    this.classList.add('active');
+                });
+
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Efek transparan saat scroll
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if ( window.scrollY > 50) {
+                    header.classList.add('bg-opacity-90');
+                    header.classList.add('backdrop-blur-sm');
+                } else {
+                    header.classList.remove('bg-opacity-90');
+                    header.classList.remove('backdrop-blur-sm');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

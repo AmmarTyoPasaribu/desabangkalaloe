@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Desa Bangkalaloe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        /* Tambahkan transisi untuk efek halus */
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        /* Warna teks saat aktif */
+        .nav-link.active {
+            color: #f4a222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <header class="fixed top-0 left-0 right-0 bg-[#10442c] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
+        <div class="container mx-auto flex items-center">
+            <div class="flex items-center">
+                <img 
+                    alt="Logo of Jeneponto" 
+                    class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
+                    height="70" 
+                    src="images/logo.png" 
+                    width="70" 
+                />
+                <div>
+                    <h1 class="text-[#f4a222] text-xl font-bold tracking-wider">Desa Bangkalaloe</h1>
+                    <p class="text-white text-sm opacity-80">Kabupaten Jeneponto</p>
+                </div>
+            </div>
+            <nav class="ml-auto">
+                <ul class="flex space-x-4 text-white">
+                    <li class="group relative">
+                        <a 
+                        class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="index.html"
+                        >
+                            Home
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="profildesa.html"
+                        >
+                            Profil Desa
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="infografis.html"
+                        >
+                            Infografis
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="umkm.html"
+                        >
+                            UMKM
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="potensidesa.html"
+                        >
+                            Potensi Desa
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                    <li class="group relative">
+                        <a 
+                            class="relative z-10 font-bold nav-link px-3 py-2 
+                            group-hover:text-white 
+                            transition-all duration-300" 
+                            href="about.html"
+                        >
+                            About
+                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Konten utama akan ditambahkan di sini -->
+    </main>
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <script>
+        // Script untuk mengatur navbar aktif
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan URL halaman saat ini
+            const currentLocation = location.pathname.split('/').pop();
+            
+            // Pilih semua link navigasi
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Loop melalui setiap link
+            navLinks.forEach(link => {
+                // Tambahkan event listener klik
+                link.addEventListener('click', function() {
+                    // Hapus kelas active dari semua link
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    
+                    // Tambahkan kelas active ke link yang diklik
+                    this.classList.add('active');
+                });
+
+                // Tandai link yang sesuai dengan halaman saat ini
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                
+                this.classList.add('active');
+            });
+
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+
+        // Efek transparan saat scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    </script>
+</body>
+</html>
