@@ -107,9 +107,816 @@
         </div>
     </header>
 
-    <main>
-        <!-- Konten utama akan ditambahkan di sini -->
-    </main>
+    <div class="container mx-auto p-4">
+        <div class="bg-white shadow-md rounded-lg p-6 relative">
+            <img alt="Background image of a market scene" class="absolute inset-0 w-full h-full object-cover opacity-20" height="300" src="https://storage.googleapis.com/a1aa/image/JsfSUbQd1kK5yXjXwPBOlLM_oKj2Fr1LlKmYPkfzIaY.jpg" width="1200"/>
+            <div class="relative z-10">
+                <h1 class="text-4xl font-bold text-gray-800">Data UMKM</h1>
+                <h2 class="text-2xl text-gray-500">Kelurahan Banyorang</h2>
+                <p class="mt-4 text-gray-700">  
+                    UMKM (Usaha Mikro Kecil dan Menengah) adalah usaha produktif yang dimiliki perorangan maupun badan usaha yang telah memenuhi kriteria sebagai usaha mikro. Seperti diatur dalam peraturan perundang-undangan No. 20 tahun 2008, kriteria UMKM dibedakan secara masing-masing meliputi usaha mikro, usaha kecil, dan usaha menengah. Berikut Daftar UMKM di Kelurahan Banyorang dikelompokkan berdasarkan RW-nya.
+                </p>
+            </div>
+        </div>
+        <div class="mt-8">
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <div class="flex justify-between items-center p-4 bg-gradient-to-r from-teal-500 to-teal-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown1')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Pokobulo</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">28</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </div>
+                <div id="dropdown1" class="hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                                <th class="py-2 px-4 border-b text-left">Pelaku Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">JK (L/P)</th>
+                                <th class="py-2 px-4 border-b text-left">Pekerjaan</th>
+                                <th class="py-2 px-4 border-b text-left">Bidang Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">Alamat Usaha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">1</td>
+                                <td class="py-2 px-4 border-b">HASMANIAR</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">2</td>
+                                <td class="py-2 px-4 border-b">BALE</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">3</td>
+                                <td class="py-2 px-4 border-b">RINAWATI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">4</td>
+                                <td class="py-2 px-4 border-b">MUHAMMADONG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">JUAL PULSA</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">5    </td>
+                                <td class="py-2 px-4 border-b">SALASARI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">6</td>
+                                <td class="py-2 px-4 border-b">SYAHNAEDI SYAM</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">USAHA PENGELASAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">7    </td>
+                                <td class="py-2 px-4 border-b">SABIR BANI, S.PdI</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">8    </td>
+                                <td class="py-2 px-4 border-b">MUHAMMAD SARBINI, SE</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">9    </td>
+                                <td class="py-2 px-4 border-b">SARIPUDDIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">10    </td>
+                                <td class="py-2 px-4 border-b">NOMPO</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">11   </td>
+                                <td class="py-2 px-4 border-b">HARIANTO</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">12   </td>
+                                <td class="py-2 px-4 border-b">JUMARANG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">13   </td>
+                                <td class="py-2 px-4 border-b">M. RISAL MANDANG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">USAHA PENGELASAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">14   </td>
+                                <td class="py-2 px-4 border-b">Hj. SOHOBSINAH, S. Pd</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">PNS</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">15   </td>
+                                <td class="py-2 px-4 border-b">Hj. ROSNI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">16   </td>
+                                <td class="py-2 px-4 border-b">SRIYATI, A. Ma</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">PENSIUNAN</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">17   </td>
+                                <td class="py-2 px-4 border-b">IDRUS, S. Pd</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">18   </td>
+                                <td class="py-2 px-4 border-b">RISWAN. R</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">19   </td>
+                                <td class="py-2 px-4 border-b">ROSDIANA YADIL</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">20   </td>
+                                <td class="py-2 px-4 border-b">AMALUDDIN TAWANG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">21   </td>
+                                <td class="py-2 px-4 border-b">Hj. NURSYAM</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">PNS</td>
+                                <td class="py-2 px-4 border-b">ATK / FOTOCOPY</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">22   </td>
+                                <td class="py-2 px-4 border-b">LENTENG</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">23   </td>
+                                <td class="py-2 px-4 border-b">MUH. ARWIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">24   </td>
+                                <td class="py-2 px-4 border-b">SURINTANG</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">25   </td>
+                                <td class="py-2 px-4 border-b">SARINA</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">26   </td>
+                                <td class="py-2 px-4 border-b">RAPIUDDIN, SH</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">ATK / FOTOCOPY</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">27   </td>
+                                <td class="py-2 px-4 border-b">PUJIANTI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">28   </td>
+                                <td class="py-2 px-4 border-b">HASAN SYAM</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN POKOBULO</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <div class="flex justify-between items-center p-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown2')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Linrungloe</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">26</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </div>
+                <div id="dropdown2" class="hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                                <th class="py-2 px-4 border-b text-left">Pelaku Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">JK (L/P)</th>
+                                <th class="py-2 px-4 border-b text-left">Pekerjaan</th>
+                                <th class="py-2 px-4 border-b text-left">Bidang Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">Alamat Usaha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">1   </td>
+                                <td class="py-2 px-4 border-b">HASNANDAR</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">2   </td>
+                                <td class="py-2 px-4 border-b">SARIAMBONG</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">RACUN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">3   </td>
+                                <td class="py-2 px-4 border-b">NURLAELA</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">4   </td>
+                                <td class="py-2 px-4 border-b">SONDA </td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">5   </td>
+                                <td class="py-2 px-4 border-b">Hj. DAHLIA</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">6   </td>
+                                <td class="py-2 px-4 border-b">SENIWATI</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">7   </td>
+                                <td class="py-2 px-4 border-b">HATIJA</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">8   </td>
+                                <td class="py-2 px-4 border-b">PASARUDDING MANGONG</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">9   </td>
+                                <td class="py-2 px-4 border-b">SINAR. J</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">10   </td>
+                                <td class="py-2 px-4 border-b">HJ. BASSE</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">11   </td>
+                                <td class="py-2 px-4 border-b">SAPRIANTO</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">12   </td>
+                                <td class="py-2 px-4 border-b">BAHARUDDIN. B</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">13   </td>
+                                <td class="py-2 px-4 border-b">PARAWANGSA</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">14   </td>
+                                <td class="py-2 px-4 border-b">RAMLIANTO</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">JUAL RACUN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">15   </td>
+                                <td class="py-2 px-4 border-b">HUSMAN JALLING</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">16   </td>
+                                <td class="py-2 px-4 border-b">SUDIRMAN</td>
+                                    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">17   </td>
+                                <td class="py-2 px-4 border-b">MANISI</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL BERAS</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">18   </td>
+                                <td class="py-2 px-4 border-b">HARMA LALO</td>
+                                    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL BERAS</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">19   </td>
+                                <td class="py-2 px-4 border-b">ARIPUDDIN</td>
+    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN / LAS</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">20   </td>
+                                <td class="py-2 px-4 border-b">H. SAMPARA LILI</td>
+    <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">21   </td>
+                                <td class="py-2 px-4 border-b">RAMLAH</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">USAHA BUTIK</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">22   </td>
+                                <td class="py-2 px-4 border-b">Hj. SURIANI SYAMSUL</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">USAHA BUTIK</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">23   </td>
+                                <td class="py-2 px-4 border-b">ROSMIATI SIMBA</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">24   </td>
+                                <td class="py-2 px-4 border-b">DARMI</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL PAKAIAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">25   </td>
+                                <td class="py-2 px-4 border-b">NURINTANG</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL ALAT MOTOR</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">26  </td>
+                                <td class="py-2 px-4 border-b">HAMSIAH</td>
+    <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN LINRUNGLOE</td>
+                            </tr>
+                    
+                            
+
+                            <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <div class="flex justify-between items-center p-4 bg-gradient-to-r from-teal-500 to-teal-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown3')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Joko</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">21</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </div>
+                <div id="dropdown3" class="hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                                <th class="py-2 px-4 border-b text-left">Pelaku Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">JK (L/P)</th>
+                                <th class="py-2 px-4 border-b text-left">Pekerjaan</th>
+                                <th class="py-2 px-4 border-b text-left">Bidang Usaha</th>
+                                <th class="py-2 px-4 border-b text-left">Alamat Usaha</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td class="py-2 px-4 border-b">1   </td>
+                                <td class="py-2 px-4 border-b">SAHABUDDIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+
+                            <tr>
+                                <td class="py-2 px-4 border-b">2   </td>
+                                <td class="py-2 px-4 border-b">AWING MANGGO</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">3   </td>
+                                <td class="py-2 px-4 border-b">SUHAPID TARANG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">4   </td>
+                                <td class="py-2 px-4 border-b">SUMANTRI BUMBUNG</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">JUAL KACA</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">5   </td>
+                                <td class="py-2 px-4 border-b">SARIAMBONG</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">6   </td>
+                                <td class="py-2 px-4 border-b">PA'GAMA</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">JUAL TABUNG GAS</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">7   </td>
+                                <td class="py-2 px-4 border-b">HARU</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">JUAL PULSA</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">8   </td>
+                                <td class="py-2 px-4 border-b">MANRA</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">9   </td>
+                                <td class="py-2 px-4 border-b">TIGA</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">10   </td>
+                                <td class="py-2 px-4 border-b">MUTIARA LOBO</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">11   </td>
+                                <td class="py-2 px-4 border-b">MUSRAWATI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">ATK / FOTOCOPY</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">12   </td>
+                                <td class="py-2 px-4 border-b">SYAMSUDDIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">13   </td>
+                                <td class="py-2 px-4 border-b">KAMILUDDIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">14   </td>
+                                <td class="py-2 px-4 border-b">SUDIRMAN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">PERBENGKELAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">15   </td>
+                                <td class="py-2 px-4 border-b">AHMAD SYAM FAJAR</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">FOTO STUDIO / PERCETAKAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">16   </td>
+                                <td class="py-2 px-4 border-b">ASDAR</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">ATK / PERCETAKAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">17   </td>
+                                <td class="py-2 px-4 border-b">AMMAR HUSAIN</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">WIRASWASTA</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">18   </td>
+                                <td class="py-2 px-4 border-b">SURIATI BOMBANG</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL GULA PASIR</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">19  </td>
+                                <td class="py-2 px-4 border-b">SAPARUDDIN. S</td>
+                                <td class="py-2 px-4 border-b">L</td>
+                                <td class="py-2 px-4 border-b">PETANI</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">20   </td>
+                                <td class="py-2 px-4 border-b">BAJI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">BARANG CAMPURAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            <tr>
+                                <td class="py-2 px-4 border-b">21  </td>
+                                <td class="py-2 px-4 border-b">RAHMAWATI</td>
+                                <td class="py-2 px-4 border-b">P</td>
+                                <td class="py-2 px-4 border-b">IRT</td>
+                                <td class="py-2 px-4 border-b">JUAL PAKAIAN</td>
+                                <td class="py-2 px-4 border-b">DUSUN JOKO</td>
+                            </tr>
+                            
+
+                            <!-- Tambahkan baris lainnya sesuai kebutuhan -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#10442c] text-white">
+
+      
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar logo -->
+                    <img alt="Logo 1" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/jenepontologo.png"/>
+                    <img alt="Logo 2" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logooposko.png" />
+                    <img alt="Logo 3" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png"/>
+                </div>
+                <div class="text-center">
+                    <h1 class="text-lg text-[#f4a222] font-bold">Desa Bangkalaloe</h1>
+                    <p class="text-xs text-gray-300">Kec. Bontoramba, Kab. Jeneponto, Sulawesi Selatan</p>
+                </div>
+                <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
+                    <!-- <a class="text-white text-sm hover:text-blue-300 transition-colors" href="">
+                        <i class="fab fa-facebook-f fa-2x"></i> Ukuran ikon diperbesar -->
+                    <!-- </a> -->
+                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kkn113unhas.desabangkalaloe/">
+                        <i class="fab fa-instagram fa-2x"></i> <!-- Ukuran ikon diperbesar -->
+                    </a>
+                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/Bangkalaloe,+Kec.+Bontoramba,+Kabupaten+Jeneponto,+Sulawesi+Selatan/@-5.6023186,119.6967312,5680m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2db9348c91f6a2b9:0x4e3e1e9fbe611c9f!8m2!3d-5.6033797!4d119.7136456!16s%2Fg%2F122jxcbh!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+                        <i class="fas fa-map-marker-alt fa-2x"></i> <!-- Ukuran ikon diperbesar -->
+                    </a>
+                    <!-- <a class="text-white text-sm hover:text-gray-300 transition-colors" href="#">
+                        <i class="fab fa-github fa-2x"></i> 
+                    </a> -->
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#f4a222] font-bold">Website Profil Desa</h2>
+                    <p class="text-xs text-gray-300">
+                        Website profil Desa merupakan situs web yang memuat informasi dasar mengenai desa, sejarah, visi dan misi desa, sampai dengan peta wilayah desa.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website ini dibuat oleh Ammar Tyo Pasaribu, Mahasiswa KKN Universitas Hasanuddin Gelombang 113 Desa Bangkalaloe pada Januari 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Situs web profil ini dibuat untuk tujuan promosi dan publisitas Desa Bangkalaloe agar lebih dikenal oleh khalayak ramai baik di dalam maupun di luar Desa Bangkalaloe.
+                    </p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <h2 class="text-base text-[#f4a222] font-bold">Kode QR Website</h2>
+                    <img 
+                        alt="QR Code" 
+                        class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" 
+                        height="100" 
+                        src="images/qrcode.jpg" 
+                        width="100"
+                    />
+                </div>
+                
+                <div id="qrCodeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
+                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
+                        <button id="closeQrCodeModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
+                        <img src="images/qrcode.jpg" alt="QR Code" class="w-full h-auto" />
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Desa Bangkalaloe - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>const qrCodeImage = document.querySelector('.space-y-2 img');
+        const qrCodeModal = document.getElementById('qrCodeModal');
+        const closeQrCodeModalBtn = document.getElementById('closeQrCodeModal');
+        
+        // Fungsi untuk membuka modal QR Code
+        qrCodeImage.addEventListener('click', function() {
+            qrCodeModal.classList.remove('hidden');
+        });
+        
+        // Fungsi untuk menutup modal QR Code
+        closeQrCodeModalBtn.addEventListener('click', function() {
+            qrCodeModal.classList.add('hidden');
+        });
+        
+        // Menutup modal jika mengklik di luar area modal
+        qrCodeModal.addEventListener('click', function(e) {
+            if (e.target === qrCodeModal) {
+                qrCodeModal.classList.add('hidden');
+            }
+        });</script>
+
+
+
     <style>
         .nav-link.active {
             position: relative;
@@ -123,6 +930,7 @@
         }
     </style>
     <script>
+
         // Script untuk mengatur navbar aktif
         document.addEventListener('DOMContentLoaded', function() {
             // Dapatkan URL halaman saat ini
@@ -181,6 +989,11 @@
             }
         });
     });
+
+    function toggleDropdown(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('hidden');
+        }
     </script>
 </body>
 </html>
