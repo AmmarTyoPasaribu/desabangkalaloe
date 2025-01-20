@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Desa Bangkalaloe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+
+    .dropdown-content {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+    }
+    .dropdown-content.open {
+        max-height: 300px; /* Sesuaikan dengan tinggi maksimum isi dropdown */
+        opacity: 1;
+    }
+
+
+ 
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link.active {
+            color: #f4a222;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-200 pt-14">
+    <div class="container mx-auto p-4">
+      
+        <div class="mt-8">
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <divs class="flex justify-between items-center p-4 bg-gradient-to-r from-teal-500 to-teal-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown1')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Pokobulo</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">1</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </divs>
+                <div id="dropdown1" class="dropdown-content hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                             
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">1</td>
+                             
+                            </tr>                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <div class="flex justify-between items-center p-4 bg-gradient-to-r from-blue-500 to-blue-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown2')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Linrungloe</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">1</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </div>
+                <div id="dropdown2" class="dropdown-content hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                           
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="py-2 px-4 border-b">1   </td>
+                              
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="bg-white shadow-md rounded-lg mb-4">
+                <div class="flex justify-between items-center p-4 bg-gradient-to-r from-teal-500 to-teal-700 rounded-t-lg cursor-pointer" onclick="toggleDropdown('dropdown3')">
+                    <div class="flex items-center">
+                        <h3 class="text-lg font-semibold text-white">Daftar UMKM Dusun Joko</h3>
+                        <span class="bg-purple-800 text-white rounded-full px-3 py-1 text-sm ml-2">1</span>
+                    </div>
+                    <i class="fas fa-chevron-down text-white"></i>
+                </div>
+                <div id="dropdown3" class="dropdown-content hidden p-4">
+                    <table class="min-w-full bg-white">
+                        <thead>
+                            <tr>
+                                <th class="py-2 px-4 border-b text-left">No</th>
+                              
+                            </tr>
+                        </thead>
+                        <tbody>
+                             <tr>
+                                <td class="py-2 px-4 border-b">1   </td>
+                              
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-[#10442c] text-white">      
+        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
+                <div class="space-y-2"> <!-- Tambah spasi internal -->
+                    <h2 class="text-base text-[#f4a222] font-bold">Website Profil Desa</h2>
+                    <p class="text-xs text-gray-300">
+                        Website profil Desa merupakan situs web yang memuat informasi dasar mengenai desa, sejarah, visi dan misi desa, sampai dengan peta wilayah desa.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Developer</h2>
+                    <p class="text-xs text-gray-300">
+                        Website ini dibuat oleh Ammar Tyo Pasaribu, Mahasiswa KKN Universitas Hasanuddin Gelombang 113 Desa Bangkalaloe pada Januari 2025.
+                    </p>
+                </div>
+                <div class="space-y-2">
+                    <h2 class="text-base text-[#f4a222] font-bold">Harapan &amp; Tujuan</h2>
+                    <p class="text-xs text-gray-300">
+                        Situs web profil ini dibuat untuk tujuan promosi dan publisitas Desa Bangkalaloe agar lebih dikenal oleh khalayak ramai baik di dalam maupun di luar Desa Bangkalaloe.
+                    </p>
+                </div>
+                <div class="space-y-2 flex flex-col items-center">
+                    <h2 class="text-base text-[#f4a222] font-bold">Kode QR Website</h2>
+                    <img 
+                        alt="QR Code" 
+                        class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" 
+                        height="100" 
+                        src="images/qrcode.jpg" 
+                        width="100"
+                    />
+                </div>
+                <div id="qrCodeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
+                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
+                        <button id="closeQrCodeModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
+                        <img src="images/qrcode.jpg" alt="QR Code" class="w-full h-auto" />
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
+                <p class="text-xs text-gray-400">
+                    © 2025 Desa Bangkalaloe - All rights reserved
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>const qrCodeImage = document.querySelector('.space-y-2 img');
+        const qrCodeModal = document.getElementById('qrCodeModal');
+        const closeQrCodeModalBtn = document.getElementById('closeQrCodeModal');
+        qrCodeImage.addEventListener('click', function() {
+            qrCodeModal.classList.remove('hidden');
+        });        
+        closeQrCodeModalBtn.addEventListener('click', function() {
+            qrCodeModal.classList.add('hidden');
+        });        
+        qrCodeModal.addEventListener('click', function(e) {
+            if (e.target === qrCodeModal) {
+                qrCodeModal.classList.add('hidden');
+            }
+        });</script>
+    <style>
+        .nav-link.active {
+            position: relative;
+        }
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            inset: -5px;
+            z-index: -1;
+            border-radius: 0.5rem;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentLocation = location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(l => {
+                        l.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+                if(link.getAttribute('href') === currentLocation) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+        const currentLocation = location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navLinks.forEach(l => {
+                    l.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+            if(link.getAttribute('href') === currentLocation) {
+                link.classList.add('active');
+            }
+        });
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-opacity-90');
+                header.classList.add('backdrop-blur-sm');
+            } else {
+                header.classList.remove('bg-opacity-90');
+                header.classList.remove('backdrop-blur-sm');
+            }
+        });
+    });
+    function toggleDropdown(id) {
+        const element = document.getElementById(id);
+        if (element.classList.contains('open')) {
+            element.classList.remove('open');
+        } else {
+            element.classList.add('open');
+        }
+    }
+    </script>
+
+<div class="container mx-auto p-4">
+    <h1 class="text-3xl font-bold text-center mb-8">
+     Jelajahi
+    </h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <!-- UMKM Section -->
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="A woman selling various goods in a market" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/xZTqlkq6lNzx4oFcI5XbbCTM8jvTOm8TQdQYZOgr-HE.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-bold mb-2">
+        UMKM
+       </h2>
+       <p class="text-gray-700">
+        UMKM (Usaha Mikro Kecil dan Menengah) adalah usaha produktif yang dimiliki perorangan maupun badan usaha yang telah memenuhi kriteria sebagai usaha mikro
+       </p>
+      </div>
+      <div class="bg-green-500 h-2">
+      </div>
+     </div>
+     <!-- Bagan Kelurahan Section -->
+     <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+      <img alt="Organizational chart of the village administration" class="w-full h-64 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/_MQF_dW-Di7y-xPBSOmRP519e-x3NmEX8DHw8crr96U.jpg" width="600"/>
+      <div class="p-4">
+       <h2 class="text-xl font-bold mb-2">
+        Bagan Kelurahan
+       </h2>
+       <p class="text-gray-700">
+        Bagan Kelurahan Banyorang, yang mencakup mulai dari Ketua Lurah, Ketua RW, sampai ketua RT masing-masing RW
+       </p>
+      </div>
+      <div class="bg-green-500 h-2">
+      </div>
+     </div>
+    </div>
+   </div>
+</body>
+</html>

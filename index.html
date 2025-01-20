@@ -271,29 +271,29 @@
 
 
 
-    <div class="flex items-center justify-center mt-4 mb-8">
+    <div class="px-8 p-8 flex bg-[#10442c] items-center justify-center mt-4 mb-8">
         <div class="text-center">
-            <h1 class="text-3xl font-bold text-gray-800 mb-8">Data Monografi</h1>
+            <h1 class="text-3xl font-bold text-white mb-8">Data Monografi</h1>
             <div class="flex justify-center space-x-8">
                 <div class="text-center">
-                    <p class="text-4xl font-bold text-blue-800">3</p>
-                    <p class="text-gray-500">Dusun</p>
+                    <p class="text-4xl font-bold text-[#f4a222]">3</p>
+                    <p class="text-gray-100">Dusun</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-4xl font-bold text-blue-800">3.107</p>
-                    <p class="text-gray-500">Jumlah Penduduk</p>
+                    <p class="text-4xl font-bold text-[#f4a222]">3.107</p>
+                    <p class="text-gray-100">Jumlah Penduduk</p>
                 </div>
                 <div class=" text-center">
-                    <p class="text-4xl font-bold text-blue-800">7,85 Km<sup>2</sup></p>
-                    <p class="text-gray-500">Luas Kelurahan</p>
+                    <p class="text-4xl font-bold text-[#f4a222]">7,85 Km<sup>2</sup></p>
+                    <p class="text-gray-100">Luas Kelurahan</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-4xl font-bold text-blue-800">939</p>
-                    <p class="text-gray-500">Kepala Keluarga</p>
+                    <p class="text-4xl font-bold text-[#f4a222]">939</p>
+                    <p class="text-gray-100">Kepala Keluarga</p>
                 </div>
                 <div class="text-center">
-                    <p class="text-4xl font-bold text-blue-800">16</p>
-                    <p class="text-gray-500">RK</p>
+                    <p class="text-4xl font-bold text-[#f4a222]">16</p>
+                    <p class="text-gray-100">RK</p>
                 </div>
             </div>
             <div class="mt-8">
@@ -464,8 +464,47 @@
             </div>
         </div>
     </div>
-
- 
+    <style>
+        .hover-zoom:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+    </style>
+    <div class="container mx-auto px-12 py-1 pb-12">
+        
+        <h1 class="text-center text-4xl font-extrabold mb-6 text-gray-800">Jelajahi</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <a href="profildesa.html" class="block bg-[#10442c] shadow-lg rounded-lg overflow-hidden border-4 border-gray-800 hover-zoom transform transition duration-500 hover:shadow-2xl">
+                <img alt="A market scene with various food items and a person" class="w-full h-48 object-cover" height="200" src="imagesstruktur/strukturaparatdesabangkalaloelago.drawio.png" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-[#f4a222]">Profil Desa</h2>
+                    <p class="text-gray-200">Profil Desa yang mencakup visi misi Desa dan struktur organisasi aparat desa, yang mencakup mulai dari Kepala desa, hingga kepala dusun masing-masing dusun</p>
+                </div>
+            </a>
+            <a href="infografis.html" class="block bg-[#10442c] shadow-lg rounded-lg overflow-hidden border-4 border-gray-800 hover-zoom transform transition duration-500 hover:shadow-2xl">
+                <img alt="A diagram showing the organizational structure of the village" class="w-full h-48 object-cover" height="200" src="images/infografiss.png" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-[#f4a222]">Infografis</h2>
+                    <p class="text-gray-200">Berisi penjelasan mengenai bagaimana infografis digunakan untuk menyampaikan informasi tentang desa, seperti data demografi dan fasilitas desa</p>
+                </div>
+            </a>
+            <a href="umkm.html" class="block bg-[#10442c] shadow-lg rounded-lg overflow-hidden border-4 border-gray-800 hover-zoom transform transition duration-500 hover:shadow-2xl">
+                <img alt="A scenic view of a lake and surrounding landscape" class="w-full h-48 object-cover" height="200" src="images/umkmsampul.jpg" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-[#f4a222]">UMKM</h2>
+                    <p class="text-gray-200"></p>
+                    <p class="text-gray-200">UMKM (Usaha Mikro Kecil dan Menengah) adalah usaha produktif yang dimiliki perorangan maupun badan usaha yang telah memenuhi kriteria sebagai usaha mikro</p>
+                </div>
+            </a>
+            <a href="potensidesa.html" class="block bg-[#10442c] shadow-lg rounded-lg overflow-hidden border-4 border-gray-800 hover-zoom transform transition duration-500 hover:shadow-2xl">
+                <img alt="A group of people wearing red uniforms" class="w-full h-48 object-cover" height="200" src="images/potensii.jpg" width="600"/>
+                <div class="p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-[#f4a222]">Potensi Desa</h2>
+                    <p class="text-gray-200">Potensi desa seperti sumber daya alam dan potensi alam yang bisa dikembangkan.</p>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <div class="bg-[#10442c] text-white">
 
@@ -476,6 +515,7 @@
                     <img alt="Logo 1" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/jenepontologo.png"/>
                     <img alt="Logo 2" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logooposko.png" />
                     <img alt="Logo 3" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png"/>
+                    <img alt="Logo 4" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logo.png"/>
                 </div>
                 <div class="text-center">
                     <h1 class="text-lg text-[#f4a222] font-bold">Desa Bangkalaloe</h1>
