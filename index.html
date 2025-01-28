@@ -170,7 +170,7 @@
             <div class="md:w-1/3 flex justify-center md:justify-end">
                 <div class="text-center">
                     <img alt="Peta desa bangkalaloe" class="border border-gray-600" height="600" src="images/Sejarah.jpg" width="400"/>
-                    <p class="text-sm text-[#f4a222] mt-2">Sejarah Desa Bangkalaloe</p>
+                    <!-- <p class="text-sm text-[#f4a222] mt-2">Sejarah Desa Bangkalaloe</p> -->
                 </div>
             </div>
             <div class="md:w-2/3 ml-4">
@@ -506,7 +506,7 @@
         </div>
     </div>
 
-    <div class="bg-[#10442c] text-white">
+    <div class="bg-[#10442c] text-white pb-4">
 
       
         <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
@@ -556,20 +556,40 @@
                     </p>
                 </div>
                 <div class="space-y-2 flex flex-col items-center">
-                    <h2 class="text-base text-[#f4a222] font-bold">Kode QR Website</h2>
-                    <img 
-                        alt="QR Code" 
-                        class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" 
-                        height="100" 
-                        src="images/qrcode.jpg" 
-                        width="100"
-                    />
-                </div>
+                    <h2 class="text-base text-[#f4a222] font-bold">
+                     Kode QR
+                    </h2>
+                    <div class="flex space-x-4">
+                     <div class="flex flex-col items-center">
+                      <h3 class="text-sm text-[#f4a222] font-bold">
+                       Website
+                      </h3>
+                      <img alt="QR Code for Desa Bangkalaloe website" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcode.jpg" width="100"/>
+                     </div>
+                     <div class="flex flex-col items-center">
+                      <h3 class="text-sm text-[#f4a222] font-bold">
+                       WhatsApp
+                      </h3>
+                      <img alt="QR Code for WhatsApp contact" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcodewa.jpg" width="100"/>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+
+                
                 
                 <div id="qrCodeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
                     <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
                         <button id="closeQrCodeModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
                         <img src="images/qrcode.jpg" alt="QR Code" class="w-full h-auto" />
+                        
+                    </div>
+                </div>
+                
+                <div id="qrCodeWAModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
+                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
+                        <button id="closeQrCodeWAModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
+                        <img src="images/qrcodewa.jpg" alt="QR Code WhatsApp" class="w-full h-auto" />
                     </div>
                 </div>
             </div>
@@ -580,7 +600,28 @@
             </div>
         </div>
     </div>
-    <script>const qrCodeImage = document.querySelector('.space-y-2 img');
+    <script>
+    const qrCodeWALink = document.querySelector('.space-y-2 img[src="images/qrcodewa.jpg"]');
+const qrCodeWAModal = document.getElementById('qrCodeWAModal');
+const closeQrCodeWAModalBtn = document.getElementById('closeQrCodeWAModal');
+
+// Fungsi untuk membuka modal QR Code WhatsApp
+qrCodeWALink.addEventListener('click', function() {
+    qrCodeWAModal.classList.remove('hidden');
+});
+
+// Fungsi untuk menutup modal QR Code WhatsApp
+closeQrCodeWAModalBtn.addEventListener('click', function() {
+    qrCodeWAModal.classList.add('hidden');
+});
+
+// Menutup modal jika mengklik di luar area modal
+qrCodeWAModal.addEventListener('click', function(e) {
+    if (e.target === qrCodeWAModal) {
+        qrCodeWAModal.classList.add('hidden');
+    }
+});
+    const qrCodeImage = document.querySelector('.space-y-2 img');
         const qrCodeModal = document.getElementById('qrCodeModal');
         const closeQrCodeModalBtn = document.getElementById('closeQrCodeModal');
         
