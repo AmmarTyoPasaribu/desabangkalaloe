@@ -1,0 +1,27 @@
+      /* Tambahkan transisi untuk efek halus */
+      .nav-link {
+        transition: color 0.3s ease;
+    }
+    /* Warna teks saat aktif */
+    .nav-link.active {
+        color: #f4a222;
+        font-weight: bold;
+    }
+
+    .hover-zoom:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .nav-link.active {
+        position: relative;
+    }
+    .nav-link.active::after {
+        content: '';
+        position: absolute;
+        inset: -5px;
+        z-index: -1;
+        border-radius: 0.5rem;
+    }
+
+    
