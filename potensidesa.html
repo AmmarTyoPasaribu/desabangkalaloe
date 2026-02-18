@@ -1,966 +1,384 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Desa Bangkalaloe</title>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Desa Bangkalaloe — Potensi Desa</title>
+    <meta name="description" content="Potensi alam, kebudayaan, dan komoditas unggulan Desa Bangkalaloe."/>
+    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <meta property="og:title" content="Desa Bangkalaloe - Potensi Desa"/>
+    <meta property="og:description" content="Potensi alam, kebudayaan, dan komoditas unggulan Desa Bangkalaloe."/>
+    <meta property="og:image" content="images/potensii.jpg"/>
+    <meta property="og:type" content="website"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <style>
-        /* Tambahkan transisi untuk efek halus */
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-        /* Warna teks saat aktif */
-        .nav-link.active {
-            color: #f4a222;
-            font-weight: bold;
-        }
-        /* CSS untuk navbar responsif */
-        @media (max-width: 700px) {
-            #nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: #10442c;
-                padding: 1rem;
-                z-index: 1000;
-            }
-            #nav-menu.active {
-                display: block;
-            }
-            #nav-menu ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            #nav-menu ul li {
-                width: 100%;
-            }
-            #nav-menu ul li a {
-                display: block;
-                padding: 0.5rem 1rem;
-            }
-        }
-
-        /* Tambahkan transisi untuk efek halus */
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-        /* Warna teks saat aktif */
-        .nav-link.active {
-            color: #f4a222;
-            font-weight: bold;
-        }
-
-        .hover-zoom:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css"/>
 </head>
 <body class="bg-gray-200 pt-14">
-    <header class="fixed top-0 left-0 right-0 bg-[#10442c] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
-        <div class="container mx-auto flex items-center">
-            <div class="flex items-center">
-                <img 
-                    alt="Logo of Jeneponto" 
-                    class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
-                    height="70" 
-                    src="images/logo.png" 
-                    width="70" 
-                />
-                <div>
-                    <h1 class="text-[#f4a222] text-xl font-bold tracking-wider">Desa Bangkalaloe</h1>
-                    <p class="text-white text-sm opacity-80">Kabupaten Jeneponto</p>
-                </div>
-            </div>
-            <!-- Tambahkan ikon hamburger di sini -->
-            <button id="hamburger" class="md:hidden text-white text-2xl ml-auto">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav id="nav-menu" class="ml-auto hidden md:block">
-                <ul class="flex space-x-4 text-white">
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="index.html"
-                        >
-                            Home
-                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="profildesa.html"
-                        >
-                            Profil Desa
-                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="infografis.html"
-                        >
-                            Infografis
-                            <span class="absolute inset- 0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="umkm.html"
-                        >
-                            UMKM
-                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="potensidesa.html"
-                        >
-                            Potensi Desa
-                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                    <li class="group relative">
-                        <a 
-                            class="relative z-10 font-bold nav-link px-3 py-2 
-                            group-hover:text-white 
-                            transition-all duration-300" 
-                            href="about.html"
-                        >
-                            About
-                            <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
 
+    <!-- Hero -->
     <section class="relative">
-        <img alt="Nature Cottage" class="w-full h-96 object-cover" height="600" src="images/potensii.jpg" width="1920"/>
+        <img alt="Potensi Desa Bangkalaloe" class="w-full h-60 sm:h-96 object-cover" src="images/potensii.jpg"/>
         <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center text-white p-6">
-            <h1 class="text-4xl md:text-5xl text-[#f4a222] text-shadow font-bold transition-transform transform hover:scale-105">
-                Potensi Desa
-            </h1>
-            <p class="mt-4 text-lg md:text-xl transition-opacity text-shadow duration-300 hover:opacity-80">
-                Mengenal Lebih Jauh Potensi Desa Bangkalaloe
-            </p>
-        
+            <h1 class="text-3xl md:text-5xl text-[#f4a222] text-shadow font-bold">Potensi Desa</h1>
+            <p class="mt-4 text-base md:text-xl text-shadow">Mengenal Lebih Jauh Potensi Desa Bangkalaloe</p>
         </div>
     </section>
-        </div>
-       </section>
-       <section class="py-6 bg-gray-200 text-white">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <div class="flex items-center justify-center mb-8">  
-                <div class="flex items-center mb-1">
-                    <div class="w-1 bg-green-800 h-12 mr-4"></div>
-                    <h1 class="text-3xl font-bold text-black text-shadow">
-                      Potensi Alam
-                    </h1>
-                </div>
-            
-                <style>
-                    .text-shadow {
-                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
-                    }
-                </style>
+
+    <!-- Potensi Alam -->
+    <section class="py-6 bg-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">
+                <div class="section-bar bg-green-800"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-black text-shadow">Potensi Alam</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mt-6">
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden">
-                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="imagespotensidesa/sampulhutan.jpg" width="600"/>
+                        <img alt="Hutan Mattatakang" class="w-full h-48 sm:h-full object-cover" src="imagespotensidesa/sampulhutan.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Hutan Mattatakang
-                            </h2>
-                            <!-- <p class="text-white mt-2">
-                                Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.
-                            </p> -->
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <h3 class="text-xl sm:text-3xl font-bold text-white">Hutan Mattatakang</h3>
                     </div>
                 </div>
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden">
-                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="images/batuleppa.jpg" width="600"/>
+                        <img alt="Batu Leppa" class="w-full h-48 sm:h-full object-cover" src="images/batuleppa.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Batu leppa
-                            </h2>
-                            <!-- <p class="text-white mt-2">
-                                Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.
-                            </p> -->
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <h3 class="text-xl sm:text-3xl font-bold text-white">Batu Leppa</h3>
                     </div>
                 </div>
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden">
-                        <img alt="Another plant leaves" class="w-full h-full object-cover" height="400" src="images/sungai.jpg" width="600"/>
+                        <img alt="Sungai" class="w-full h-48 sm:h-full object-cover" src="images/sungai.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Sungai
-                            </h2>
-                            <!-- <p class="text-white mt-2">
-                                Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.
-                            </p> -->
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <h3 class="text-xl sm:text-3xl font-bold text-white">Sungai</h3>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
+    <!-- Detail: Hutan Mattatakang -->
     <section class="bg-gray-200">
         <div class="container mx-auto p-4">
-         <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-         
-          <div class="md:w-1/2 p-6">
-           <div class="flex items-center mb-4">
-            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Hutan Mattatakang</h2>
+                    </div>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Hutan Mattatakang adalah salah satu kawasan hutan bersejarah yang terletak di perbukitan bagian utara Desa Bangkalaloe, Kecamatan Bontoramba, Jeneponto, Sulawesi Selatan. Kawasan ini dikenal sebagai "Karollea" oleh masyarakat setempat dan memiliki nilai historis serta budaya yang tinggi. Pada masa praislam Karollea adalah pusat kegiatan upacara ritual pemujaan (anismisme-dinamisme) sehingga masih dikeramatkan
+                    </p>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Hutan ini juga kaya akan keanekaragaman hayati. Pada Juli 2024, sekelompok peneliti dari KKN Jurusan Kehutanan Universitas Gadjah Mada (UGM) Yogyakarta secara tidak sengaja menemukan jenis pohon langka di Hutan Mattatakang. Pohon tersebut berasal dari spesies <i>Gyrocarpus americanus</i>, yang umumnya ditemukan di Amerika Latin, Nusa Tenggara, dan Jawa. Penemuan ini menunjukkan potensi besar Hutan Mattatakang sebagai kawasan konservasi flora langka.
+                    </p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+                    <img alt="Hutan Mattatakang 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan1.jpg" loading="lazy"/>
+                    <img alt="Hutan Mattatakang 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan2.jpg" loading="lazy"/>
+                    <img alt="Hutan Mattatakang 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan3.jpg" loading="lazy"/>
+                    <img alt="Hutan Mattatakang 4" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan4.jpg" loading="lazy"/>
+                    <img alt="Hutan Mattatakang 5" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan5.jpg" loading="lazy"/>
+                    <img alt="Hutan Mattatakang 6" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/hutan6.jpg" loading="lazy"/>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold text-gray-800">
-             Hutan Mattatakang
-            </h1>
-           </div>
-         
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Hutan Mattatakang adalah salah satu kawasan hutan bersejarah yang terletak di perbukitan bagian utara Desa Bangkalaloe, Kecamatan Bontoramba, Jeneponto, Sulawesi Selatan. Kawasan ini dikenal sebagai "Karollea" oleh masyarakat setempat dan memiliki nilai historis serta budaya yang tinggi. Pada masa praislam Karollea adalah pusat kegiatan upacara ritual pemujaan (anismisme-dinamisme) sehingga masih dikeramatkan
-        </p>
-   
-          <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Hutan ini juga kaya akan keanekaragaman hayati. Pada Juli 2024, sekelompok peneliti dari KKN Jurusan Kehutanan Universitas Gadjah Mada (UGM) Yogyakarta secara tidak sengaja menemukan jenis pohon langka di Hutan Mattatakang. Pohon tersebut berasal dari spesies <i>Gyrocarpus americanus</i>, yang umumnya ditemukan di Amerika Latin, Nusa Tenggara, dan Jawa. Penemuan ini menunjukkan potensi besar Hutan Mattatakang sebagai kawasan konservasi flora langka.
-            </p>
- 
-          </div>
-
-          <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan1.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan2.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan3.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan4.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan5.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/hutan6.jpg" width="300"/>
-           </div>
-         </div>
         </div>
-       </section>
+    </section>
 
+    <!-- Detail: Batu Leppa -->
     <section class="bg-gray-200">
         <div class="container mx-auto p-4">
-         <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-          <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa1.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa2.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa3.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa4.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa5.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa6.jpg" width="300"/>
-          </div>
-          <div class="md:w-1/2 p-6">
-           <div class="flex items-center mb-4">
-            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+                    <img alt="Batu Leppa 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa1.jpg" loading="lazy"/>
+                    <img alt="Batu Leppa 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa2.jpg" loading="lazy"/>
+                    <img alt="Batu Leppa 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa3.jpg" loading="lazy"/>
+                    <img alt="Batu Leppa 4" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa4.jpg" loading="lazy"/>
+                    <img alt="Batu Leppa 5" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa5.jpg" loading="lazy"/>
+                    <img alt="Batu Leppa 6" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/batuleppa6.jpg" loading="lazy"/>
+                </div>
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Batu Leppa</h2>
+                    </div>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Batu Leppa berarti batu flat yang datar atau pipih. Diperkirakan terbentuk oleh pembekuan cairan magma pada periode pleistosen. Batuleppa yang berada di ketinggian merupakan titik untuk melihat view kampung dari atas, sehingga cocok untuk kegiatan wisata alam
+                    </p>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Batu Leppa terletak di Dusun Linrungloe, Desa Bangkalaloe, Kabupaten Jeneponto, Sulawesi Selatan. Tempat ini menawarkan keindahan alam yang asri, dikelilingi oleh perkebunan yang subur. Pengunjung dapat menikmati suasana alam yang tenang dan udara yang segar.
+                    </p>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Untuk mencapai Batu Leppa, pengunjung dapat menempuh perjalanan dari pusat Kota Jeneponto dengan kendaraan pribadi atau transportasi umum. Akses jalan menuju lokasi cukup baik, namun disarankan untuk menggunakan kendaraan yang sesuai dengan medan.
+                    </p>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold text-gray-800">
-             Batu Leppa
-            </h1>
-           </div>
-
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Batu Leppa berarti batu flat yang datar atau pipih. Diperkirakan terbentuk oleh pembekuan cairan magma pada periode pleistosen. Batuleppa yang berada di ketinggian merupakan titik untuk melihat view kampung dari atas, sehingga cocok untuk kegiatan wisata alam
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Batu Leppa terletak di Dusun Linrungloe, Desa Bangkalaloe, Kabupaten Jeneponto, Sulawesi Selatan. Tempat ini menawarkan keindahan alam yang asri, dikelilingi oleh perkebunan yang subur. Pengunjung dapat menikmati suasana alam yang tenang dan udara yang segar, menjadikannya tempat ideal untuk melepas penat dari kesibukan sehari-hari.
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Untuk mencapai Batu Leppa, pengunjung dapat menempuh perjalanan dari pusat Kota Jeneponto dengan kendaraan pribadi atau transportasi umum. Akses jalan menuju lokasi cukup baik, namun disarankan untuk menggunakan kendaraan yang sesuai dengan medan. Sebelum berkunjung, sebaiknya mempersiapkan perbekalan yang cukup, mengingat fasilitas di sekitar lokasi mungkin terbatas.
-           </p>
-          
-          </div>
-         </div>
         </div>
-       </section>
+    </section>
 
-       <section class="bg-gray-200"></section>
-       <div class="container mx-auto p-4">
-        <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-        
-         <div class="md:w-1/2 p-6">
-          <div class="flex items-center mb-4">
-           <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
-           </div>
-           <h1 class="text-4xl font-bold text-gray-800">
-            Sungai 
-           </h1>
-          </div>
-        
-          <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-           Sungai yang berjarak sekitar 5 km ini membentang dari sisi timur laut Desa Bangkalaloe hingga sebelah selatan Desa Bangkalaloe.
-       </p>
-  
-         <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-           
-           </p>
-
-         </div>
-
-         <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai1.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai2.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai3.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai4.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai5.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/sungai6.jpg" width="300"/>
-          </div>
-        </div>
-       </div>
-      </section>
-
-
-
-
-
-
-      <section class="container mx-auto py-16 bg-[#10442c] text-white">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <div class="flex items-center justify-center mb-8">  
-                <div class="flex items-center mb-1">
-                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-                    <h1 class="text-3xl font-bold text-[#f4a222] text-shadow">
-                        Potensi Kebudayaan
-                    </h1>
+    <!-- Detail: Sungai -->
+    <section class="bg-gray-200">
+        <div class="container mx-auto p-4">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Sungai</h2>
+                    </div>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Sungai yang berjarak sekitar 5 km ini membentang dari sisi timur laut Desa Bangkalaloe hingga sebelah selatan Desa Bangkalaloe.
+                    </p>
                 </div>
-            
-                <style>
-                    .text-shadow {
-                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
-                    }
-                </style>
+                <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+                    <img alt="Sungai 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai1.jpg" loading="lazy"/>
+                    <img alt="Sungai 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai2.jpg" loading="lazy"/>
+                    <img alt="Sungai 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai3.jpg" loading="lazy"/>
+                    <img alt="Sungai 4" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai4.jpg" loading="lazy"/>
+                    <img alt="Sungai 5" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai5.jpg" loading="lazy"/>
+                    <img alt="Sungai 6" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sungai6.jpg" loading="lazy"/>
+                </div>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+        </div>
+    </section>
+
+    <!-- Potensi Kebudayaan -->
+    <section class="py-8 sm:py-16 bg-[#10442c] text-white">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-[#f4a222] text-shadow">Potensi Kebudayaan</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mt-6">
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="imagespotensidesa/makamsampul.jpg" width="600"/>
+                        <img alt="Makam Prasejarah" class="w-full h-48 sm:h-full object-cover" src="imagespotensidesa/makamsampul.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
                         <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Makam Prasejarah
-                            </h2>
-                            <p class="text-white mt-2">
-                                Para Leluhur To'do Bangkalaloe
-                            </p>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Makam Prasejarah</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Para Leluhur To'do Bangkalaloe</p>
                         </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
                     </div>
                 </div>
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="imagespotensidesa/rumahsampul.jpg" width="600"/>
+                        <img alt="Balla' Lompoa" class="w-full h-48 sm:h-full object-cover" src="imagespotensidesa/rumahsampul.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
                         <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Balla' Lompoa
-                            </h2>
-                            <p class="text-white mt-2">
-                                Rumah Adat Desa
-                            </p>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Balla' Lompoa</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Rumah Adat Desa</p>
                         </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
                     </div>
                 </div>
                 <div class="relative">
                     <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Another plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="imagespotensidesa/sejarahsampul.jpg" width="600"/>
+                        <img alt="Sejarah To'do Bangkalaloe" class="w-full h-48 sm:h-full object-cover" src="imagespotensidesa/sejarahsampul.jpg" loading="lazy"/>
                     </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
                         <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Sejarah To'do Bangkalaloe
-                            </h2>
-                            <p class="text-white mt-2">
-                                Sejarah Desa Bangkalaloe
-                            </p>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Sejarah To'do Bangkalaloe</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Sejarah Desa Bangkalaloe</p>
                         </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
+    <!-- Detail: Makam Prasejarah -->
     <section class="bg-gray-200">
         <div class="container mx-auto p-4">
-         <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-         
-          <div class="md:w-1/2 p-6">
-           <div class="flex items-center mb-4">
-            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Makam Prasejarah</h2>
+                    </div>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Kompleks Makam Kuno Joko merupakan situs purbakala dari zaman megalitikum atau zaman batu besar. Tempat pemakaman para Toddo Bangkalaloe dan keluarganya yang kini menjadi cagar budaya. Makam ini terletak di Dusun Joko, Desa Bangkalaloe
+                    </p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+                    <img alt="Makam 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam1.jpg" loading="lazy"/>
+                    <img alt="Makam 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam2.jpg" loading="lazy"/>
+                    <img alt="Makam 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam3.jpg" loading="lazy"/>
+                    <img alt="Makam 4" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam4.jpg" loading="lazy"/>
+                    <img alt="Makam 5" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam5.jpg" loading="lazy"/>
+                    <img alt="Makam 6" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/makam6.jpg" loading="lazy"/>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold text-gray-800">
-             Makam Prasejarah
-            </h1>
-           </div>
-         
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            Kompleks Makam Kuno Joko merupakan situs purbakala dari zaman megalitikum atau zaman batu besar. Tempat pemakaman para Toddo Bangkalaloe dan keluarganya yang kini menjadi cagar budaya. Makam ini terletak di Dusun Joko, Desa Bangkalaloe
-        </p>
-   
-          <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-           
-            </p>
- 
-          </div>
-
-          <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam1.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam2.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam3.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam4.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam5.jpg" width="300"/>
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/makam6.jpg" width="300"/>
-           </div>
-         </div>
         </div>
-       </section>
+    </section>
 
+    <!-- Detail: Balla' Lompoa -->
     <section class="bg-gray-200">
         <div class="container mx-auto p-4">
-         <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-          <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah1.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah2.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah3.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah4.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah5.jpg" width="300"/>
-           <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="200" onclick="openModal(this.src)" src="imagespotensidesa/rumah6.jpg" width="300"/>
-          </div>
-          <div class="md:w-1/2 p-6">
-           <div class="flex items-center mb-4">
-            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 grid grid-cols-2 gap-2 p-2">
+                    <img alt="Rumah Adat 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah1.jpg" loading="lazy"/>
+                    <img alt="Rumah Adat 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah2.jpg" loading="lazy"/>
+                    <img alt="Rumah Adat 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah3.jpg" loading="lazy"/>
+                    <img alt="Rumah Adat 4" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah4.jpg" loading="lazy"/>
+                    <img alt="Rumah Adat 5" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah5.jpg" loading="lazy"/>
+                    <img alt="Rumah Adat 6" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/rumah6.jpg" loading="lazy"/>
+                </div>
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Balla' Lompoa</h2>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold text-gray-800">
-             Balla' Lompoa
-            </h1>
-           </div>
-
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            
-           </p>
-          
-          </div>
-         </div>
         </div>
-       </section>
+    </section>
 
-       
-      <section>
+    <!-- Detail: Sejarah To'do -->
+    <section class="bg-gray-200">
         <div class="container mx-auto p-4">
-         <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
-         
-          <div class="md:w-1/2 p-6">
-           <div class="flex items-center mb-4">
-            <div class="w-1 bg-blue-500 h-12 mr-4 rounded-lg">
+            <div class="flex flex-col md:flex-row items-center bg-gray-300 rounded-lg shadow-lg overflow-hidden">
+                <div class="md:w-1/2 p-4 sm:p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="section-bar bg-blue-500 rounded-lg"></div>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-gray-800">Sejarah To'do Bangkalaloe</h2>
+                    </div>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        To'do Bangkalaloe bermula pada masa Manangga memegang jabatan pemerintahan yang disebut sebagai "ketua" (Daeng Toa), pada era itu pula hutan mattatakang terjadi perseteruan untuk mendapatkan burung emas oleh empat daerah pionir/To'do Appaka (Layu, Lentu, Batujala, Bangkalaloe).
+                    </p>
+                    <p class="text-gray-800 text-sm sm:text-lg mb-4 leading-relaxed text-justify">
+                        Akhirnya untuk mengatasi kemungkinan-kemungkinan sengketa yang parah, maka ide pembentukan raja / kerajaan binamu dicetuskan. Saat itu lahirnya istilah "Toddo" sebagai dewan adat yang menetapkan dan melantik raja. Manangga adalah Toddo bangkalaloe I.
+                    </p>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
+                    <img alt="Sejarah 1" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sejarah1.jpg" loading="lazy"/>
+                    <div class="grid grid-rows-2 gap-2">
+                        <img alt="Sejarah 2" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sejarah2.jpg" loading="lazy"/>
+                        <img alt="Sejarah 3" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform rounded-lg" onclick="openModal(this.src)" src="imagespotensidesa/sejarah3.jpg" loading="lazy"/>
+                    </div>
+                </div>
             </div>
-            <h1 class="text-4xl font-bold text-gray-800">
-                Sejarah To'do Bangkalaloe
-            </h1>
-           </div>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            To'do Bangkalaloe bermula pada masa Manangga memegang jabatan pemerintahan yang disebut sebagai "ketua" (Daeng Toa)m pada era itu pula hutan mattatakang terjadi perseteruan untuk mendapatkan burung emas oleh empat daerah pionir/To'do Appaka (Layu, Lentu, Batujala, Bangkalaloe). 
-           </p>
-           <p class="text-gray-800 text-lg mb-4 leading-relaxed text-justify">
-            .Akhirnya untuk mengatasi kemungkinan-kemungkinan sengketa yang parah, maka ide pembentukan raja / kerajaan binamu dicetuskan. Saat itu lahirnya istilah "Toddo" sebagai dewam adat yang menetaplan dan melantik raja. Manangga adalah Toddo bangkalaloe I.           </p>
-          </div>
-          <div class="md:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-2 p-2">
-            <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="800" onclick="openModal(this.src)" src="imagespotensidesa/sejarah1.jpg" width="600"/>
-            <div class="grid grid-rows-2 gap-2">
-             <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="400" onclick="openModal(this.src)" src="imagespotensidesa/sejarah2.jpg" width="600"/>
-             <img alt="A beautiful waterfall in a lush green forest" class="w-full h-full object-cover cursor-pointer transition-transform transform hover:scale-105 rounded-lg" height="400" onclick="openModal(this.src)" src="imagespotensidesa/sejarah3.jpg" width="600"/>
-            </div>
-           </div>
-         </div>
         </div>
-       </section>
+    </section>
 
-
-
-
-
-
-
-       <section class="py-16 bg-gray-200">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
+    <!-- Komoditas Unggulan Berdasarkan Luas Tanam -->
+    <section class="py-8 sm:py-16 bg-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
             <div class="max-w-6xl mx-auto">
-                <div class="flex items-center justify-center mb-8">  
-                    <div class="flex items-center mb-1">
-                        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-                        <h1 class="text-3xl font-bold text-black text-shadow">
-                            Komoditas Unggulan Berdasarkan Luas Tanam	
-                        </h1>
-                    </div>
-                
-                    <style>
-                        .text-shadow {
-                            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
-                        }
-                    </style>
+                <div class="flex items-center justify-center mb-8">
+                    <div class="section-bar bg-blue-500"></div>
+                    <h2 class="text-xl sm:text-3xl font-bold text-black text-shadow">Komoditas Unggulan Berdasarkan Luas Tanam</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     <div class="relative">
                         <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Philodendron plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/padi.jpg" width="600"/></div>
-                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-6 flex flex-col justify-between">
+                            <img alt="Padi" class="w-full h-48 sm:h-full object-cover rounded-lg" src="images/padi.jpg" loading="lazy"/>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-4 sm:p-6 flex flex-col justify-between">
                             <div>
-                                <h2 class="text-3xl font-bold text-white">
-                                    Padi
-                                </h2>
-                                <p class="text-white mt-2">
-                                    Tersebar Di Seluruh Penjuru Desa Bangkalaloe
-                                </p>
+                                <h3 class="text-xl sm:text-3xl font-bold text-white">Padi</h3>
+                                <p class="text-white mt-2 text-sm sm:text-base">Tersebar Di Seluruh Penjuru Desa Bangkalaloe</p>
                             </div>
-                            <!-- <div class="self-end">
-                                <button class="bg-white text-black rounded-full p-2">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div> -->
                         </div>
                     </div>
                     <div class="relative">
                         <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Calathea plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/jagung.jpg" width="600"/></div>
-                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-6 flex flex-col justify-between">
+                            <img alt="Jagung" class="w-full h-48 sm:h-full object-cover rounded-lg" src="images/jagung.jpg" loading="lazy"/>
+                        </div>
+                        <div class="absolute inset-0 bg-black bg-opacity-50 rounded-lg p-4 sm:p-6 flex flex-col justify-between">
                             <div>
-                                <h2 class="text-3xl font-bold text-white">
-                                    Jagung
-                                </h2>
-                                <p class="text-white mt-2">
-                                    Tersebar Di Seluruh Penjuru Desa Bangkalaloe
-                                </p>
+                                <h3 class="text-xl sm:text-3xl font-bold text-white">Jagung</h3>
+                                <p class="text-white mt-2 text-sm sm:text-base">Tersebar Di Seluruh Penjuru Desa Bangkalaloe</p>
                             </div>
-                            <!-- <div class="self-end">
-                                <button class="bg-white text-black rounded-full p-2">
-                                    <i class="fas fa-arrow-right"></i>
-                                </button>
-                            </div> -->
                         </div>
-                    </div>
-                </div>
-        </div>
-       </section>
-
-
-
-       <section class="container mx-auto py-16 bg-[#10442c] text-white">
-        <div class="container mx-auto px-6 md:px-12 lg:px-24">
-            <div class="flex items-center justify-center mb-8">  
-                <div class="flex items-center mb-1">
-                    <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-                    <h1 class="text-3xl font-bold text-[#f4a222] text-shadow">
-                        Komoditas Unggulan Berdasarkan Nilai Ekonomi	
-                    </h1>
-                </div>
-            
-                <style>
-                    .text-shadow {
-                        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
-                    }
-                </style>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                <div class="relative">
-                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Air Purifying plant leaves" class="w-full h-full object-cover" height="400" src="images/bawangmerah.jpg" width="600"/>
-                    </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Bawang Merah
-                            </h2>
-                            <p class="text-white mt-2">
-                                Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.
-                            </p>
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Low Light Tolerant plant leaves" class="w-full h-full object-cover" height="400" src="images/cabeasli.jpg" width="600"/>
-                    </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Cabai
-                            </h2>
-                            <p class="text-white mt-2">
-                                Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.
-                            </p>
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
-                        <img alt="Another plant leaves" class="w-full h-full object-cover rounded-lg" height="400" src="images/lontar.jpg" width="600"/>
-                    </div>
-                    <div class="absolute inset-0 bg-black bg-opacity-50 p-6 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-3xl font-bold text-white">
-                                Gula Merah
-                            </h2>
-                            <p class="text-white mt-2">
-                                Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.
-                            </p>
-                        </div>
-                        <!-- <div class="self-end">
-                            <button class="bg-white text-black rounded-full p-2">
-                                <i class="fas fa-arrow-right"></i>
-                            </button>
-                        </div> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-
-
-
-
-  
-    
-
-       
-    
-        <!-- Modal -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
-            <span class="absolute bottom-4 left-4 text-white cursor-pointer" onclick="closeModal()">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 12 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H3m0 0l6 6m-6-6l6-6" />
-                </svg>
-            </span>
-            <img id="modalImage" class="max-w-full max-h-full" src="" alt="Zoomed Image"/>
+    <!-- Komoditas Unggulan Berdasarkan Nilai Ekonomi -->
+    <section class="py-8 sm:py-16 bg-[#10442c] text-white">
+        <div class="container mx-auto px-4 sm:px-6 md:px-12 lg:px-24">
+            <div class="flex items-center justify-center mb-8">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-xl sm:text-3xl font-bold text-[#f4a222] text-shadow">Komoditas Unggulan Berdasarkan Nilai Ekonomi</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mt-6">
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Bawang Merah" class="w-full h-48 sm:h-full object-cover" src="images/bawangmerah.jpg" loading="lazy"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Bawang Merah</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Bawang merah adalah salah satu komoditas penting yang banyak digunakan dalam masakan Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Cabai" class="w-full h-48 sm:h-full object-cover" src="images/cabeasli.jpg" loading="lazy"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Cabai</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Cabai memberikan rasa pedas yang khas dan merupakan bahan utama dalam banyak hidangan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="border-4 border-[#0c4424] overflow-hidden rounded-lg">
+                        <img alt="Gula Merah" class="w-full h-48 sm:h-full object-cover rounded-lg" src="images/lontar.jpg" loading="lazy"/>
+                    </div>
+                    <div class="absolute inset-0 bg-black bg-opacity-50 p-4 sm:p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl sm:text-3xl font-bold text-white">Gula Merah</h3>
+                            <p class="text-white mt-2 text-sm sm:text-base">Gula merah adalah pemanis alami yang sering digunakan dalam berbagai resep tradisional.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50 p-4">
+        <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="max-w-full max-h-full rounded-lg" src="" alt="Zoomed Image" loading="lazy"/>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script src="js/components.js"></script>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadComponents('potensidesa.html');
+        });
+
         function openModal(src) {
             const modal = document.getElementById('imageModal');
             const modalImage = document.getElementById('modalImage');
             modalImage.src = src;
             modal.classList.remove('hidden');
         }
-    
+
         function closeModal() {
             const modal = document.getElementById('imageModal');
             modal.classList.add('hidden');
         }
-    </script>
 
-
-<style>
-    .text-shadow {
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Mengatur bayangan teks */
-    }
-</style>
-
-       <div class="bg-[#10442c] text-white pb-4">
-
-      
-        <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
-            <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
-                <div class="flex space-x-6"> <!-- Perbesar jarak antar logo -->
-                    <img alt="Logo 1" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/jenepontologo.png"/>
-                    <img alt="Logo 2" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logooposko.png" />
-                    <img alt="Logo 3" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png"/>
-                    <img alt="Logo 4" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logo.png"/>
-                </div>
-                <div class="text-center">
-                    <h1 class="text-lg text-[#f4a222] font-bold">Desa Bangkalaloe</h1>
-                    <p class="text-xs text-gray-300">Kec. Bontoramba, Kab. Jeneponto, Sulawesi Selatan</p>
-                </div>
-                <div class="flex space-x-6"> 
-                    <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kkn113unhas.desabangkalaloe/">
-                        <i class="fab fa-instagram fa-2x"></i> <!-- Ukuran ikon diperbesar -->
-                    </a>
-                    <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/Bangkalaloe,+Kec.+Bontoramba,+Kabupaten+Jeneponto,+Sulawesi+Selatan/@-5.6023186,119.6967312,5680m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2db9348c91f6a2b9:0x4e3e1e9fbe611c9f!8m2!3d-5.6033797!4d119.7136456!16s%2Fg%2F122jxcbh!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
-                        <i class="fas fa-map-marker-alt fa-2x"></i> <!-- Ukuran ikon diperbesar -->
-                    </a>
-                 
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
-                <div class="space-y-2"> <!-- Tambah spasi internal -->
-                    <h2 class="text-base text-[#f4a222] font-bold">Website Profil Desa</h2>
-                    <p class="text-xs text-gray-300">
-                        Website profil Desa merupakan situs web yang memuat informasi dasar mengenai desa, sejarah, visi dan misi desa, sampai dengan peta wilayah desa.
-                    </p>
-                </div>
-                <div class="space-y-2">
-                    <h2 class="text-base text-[#f4a222] font-bold">Developer</h2>
-                    <p class="text-xs text-gray-300">
-                        Website ini dibuat oleh Ammar Tyo Pasaribu, Mahasiswa KKN Universitas Hasanuddin Gelombang 113 Desa Bangkalaloe pada Januari 2025.
-                    </p>
-                </div>
-                <div class="space-y-2">
-                    <h2 class="text-base text-[#f4a222] font-bold">Harapan &amp; Tujuan</h2>
-                    <p class="text-xs text-gray-300">
-                        Situs web profil ini dibuat untuk tujuan promosi dan publisitas Desa Bangkalaloe agar lebih dikenal oleh khalayak ramai baik di dalam maupun di luar Desa Bangkalaloe.
-                    </p>
-                </div>
-                <div class="space-y-2 flex flex-col items-center">
-                    <h2 class="text-base text-[#f4a222] font-bold">
-                     Kode QR
-                    </h2>
-                    <div class="flex space-x-4">
-                     <div class="flex flex-col items-center">
-                      <h3 class="text-sm text-[#f4a222] font-bold">
-                       Website
-                      </h3>
-                      <img alt="QR Code for Desa Bangkalaloe website" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcode.jpg" width="100"/>
-                     </div>
-                     <div class="flex flex-col items-center">
-                      <h3 class="text-sm text-[#f4a222] font-bold">
-                       WhatsApp
-                      </h3>
-                      <img alt="QR Code for WhatsApp contact" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcodewa.jpg" width="100"/>
-                     </div>
-                    </div>
-                   </div>
-                  </div>
-
-                
-                
-                <div id="qrCodeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
-                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
-                        <button id="closeQrCodeModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
-                        <img src="images/qrcode.jpg" alt="QR Code" class="w-full h-auto" />
-                        
-                    </div>
-                </div>
-                
-                <div id="qrCodeWAModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
-                    <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
-                        <button id="closeQrCodeWAModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
-                        <img src="images/qrcodewa.jpg" alt="QR Code WhatsApp" class="w-full h-auto" />
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
-                <p class="text-xs text-gray-400">
-                    © 2025 Desa Bangkalaloe - All rights reserved
-                </p>
-            </div>
-        </div>
-    </div>
-    <script>
-    const qrCodeWALink = document.querySelector('.space-y-2 img[src="images/qrcodewa.jpg"]');
-const qrCodeWAModal = document.getElementById('qrCodeWAModal');
-const closeQrCodeWAModalBtn = document.getElementById('closeQrCodeWAModal');
-
-// Fungsi untuk membuka modal QR Code WhatsApp
-qrCodeWALink.addEventListener('click', function() {
-    qrCodeWAModal.classList.remove('hidden');
-});
-
-// Fungsi untuk menutup modal QR Code WhatsApp
-closeQrCodeWAModalBtn.addEventListener('click', function() {
-    qrCodeWAModal.classList.add('hidden');
-});
-
-// Menutup modal jika mengklik di luar area modal
-qrCodeWAModal.addEventListener('click', function(e) {
-    if (e.target === qrCodeWAModal) {
-        qrCodeWAModal.classList.add('hidden');
-    }
-});
-    const qrCodeImage = document.querySelector('.space-y-2 img');
-        const qrCodeModal = document.getElementById('qrCodeModal');
-        const closeQrCodeModalBtn = document.getElementById('closeQrCodeModal');
-        
-        // Fungsi untuk membuka modal QR Code
-        qrCodeImage.addEventListener('click', function() {
-            qrCodeModal.classList.remove('hidden');
+        // Close modal on clicking outside image
+        document.getElementById('imageModal').addEventListener('click', function(e) {
+            if (e.target === this) closeModal();
         });
-        
-        // Fungsi untuk menutup modal QR Code
-        closeQrCodeModalBtn.addEventListener('click', function() {
-            qrCodeModal.classList.add('hidden');
-        });
-        
-        // Menutup modal jika mengklik di luar area modal
-        qrCodeModal.addEventListener('click', function(e) {
-            if (e.target === qrCodeModal) {
-                qrCodeModal.classList.add('hidden');
-            }
-        });</script>
-      
-
-
-
-
-
-    <style>
-         /* body {
-            font-family: 'Roboto', sans-serif;
-        } */
-        .nav-link.active {
-            position: relative;
-        }
-        .nav-link.active::after {
-            content: '';
-            position: absolute;
-            inset: -5px;
-            z-index: -1;
-            border-radius: 0.5rem;
-        }
-    </style>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
-
-            hamburger.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
-
-            // Tutup menu saat mengklik di luar menu
-            document.addEventListener('click', function(event) {
-                if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
-                    navMenu.classList.remove('active');
-                }
-            });
-        });
-        // Script untuk mengatur navbar aktif
-        document.addEventListener('DOMContentLoaded', function() {
-            // Dapatkan URL halaman saat ini
-            const currentLocation = location.pathname.split('/').pop();
-            
-            // Pilih semua link navigasi
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            // Loop melalui setiap link
-            navLinks.forEach(link => {
-                // Tambahkan event listener klik
-                link.addEventListener('click', function() {
-                    // Hapus kelas active dari semua link
-                    navLinks.forEach(l => {
-                        l.classList.remove('active');
-                    });
-                    
-                    // Tambahkan kelas active ke link yang diklik
-                    this.classList.add('active');
-                });
-
-                // Tandai link yang sesuai dengan halaman saat ini
-                if(link.getAttribute('href') === currentLocation) {
-                    link.classList.add('active');
-                }
-            });
-        });
-
-        document.addEventListener('DOMContentLoaded', function() {
-        const currentLocation = location.pathname.split('/').pop();
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                navLinks.forEach(l => {
-                    l.classList.remove('active');
-                });
-                
-                this.classList.add('active');
-            });
-
-            if(link.getAttribute('href') === currentLocation) {
-                link.classList.add('active');
-            }
-        });
-
-        // Efek transparan saat scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('bg-opacity-90');
-                header.classList.add('backdrop-blur-sm');
-            } else {
-                header.classList.remove('bg-opacity-90');
-                header.classList.remove('backdrop-blur-sm');
-            }
-        });
-    });
     </script>
 </body>
 </html>

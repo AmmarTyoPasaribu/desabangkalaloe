@@ -1,1442 +1,575 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Desa Bangkalaloe</title>
+<html lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Desa Bangkalaloe — Infografis</title>
+    <meta name="description" content="Data infografis Desa Bangkalaloe: demografi penduduk, sarana prasarana, dan APBDes."/>
+    <link rel="icon" type="image/png" href="images/logo.png"/>
+    <meta property="og:title" content="Desa Bangkalaloe - Infografis"/>
+    <meta property="og:description" content="Data infografis Desa Bangkalaloe: demografi penduduk, sarana prasarana, dan APBDes."/>
+    <meta property="og:image" content="images/infografiss.png"/>
+    <meta property="og:type" content="website"/>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* body {
-               font-family: 'Poppins', sans-serif;
-           } */
-     </style>
-   
-    <style>
-      /* Tambahkan transisi untuk efek halus */
-      .nav-link {
-        transition: color 0.3s ease;
-      }
-      /* Warna teks saat aktif */
-      .nav-link.active {
-        color: #f4a222;
-        font-weight: bold;
-      }
-      /* CSS untuk navbar responsif */
-      @media (max-width: 700px) {
-            #nav-menu {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background-color: #10442c;
-                padding: 1rem;
-                z-index: 1000;
-            }
-            #nav-menu.active {
-                display: block;
-            }
-            #nav-menu ul {
-                flex-direction: column;
-                gap: 0.5rem;
-            }
-            #nav-menu ul li {
-                width: 100%;
-            }
-            #nav-menu ul li a {
-                display: block;
-                padding: 0.5rem 1rem;
-            }
-        }
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body class="bg-gray-200 pt-14">
+    <!-- Navbar -->
+    <div id="navbar-container"></div>
 
-        /* Tambahkan transisi untuk efek halus */
-        .nav-link {
-            transition: color 0.3s ease;
-        }
-        /* Warna teks saat aktif */
-        .nav-link.active {
-            color: #f4a222;
-            font-weight: bold;
-        }
-
-        .hover-zoom:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease-in-out;
-        }
-    </style>
-  </head>
-  <body class="bg-gray-200 pt-14">
-    <header class="fixed top-0 left-0 right-0 bg-[#10442c] p-2 flex items-center z-50 shadow-lg rounded-b-xl transition-all duration-300">
-      <div class="container mx-auto flex items-center">
-          <div class="flex items-center">
-              <img 
-                  alt="Logo of Jeneponto" 
-                  class="h-12 w-12 mr-4 rounded-full shadow-md hover:rotate-12 transition-transform duration-300" 
-                  height="70" 
-                  src="images/logo.png" 
-                  width="70" 
-              />
-              <div>
-                  <h1 class="text-[#f4a222] text-xl font-bold tracking-wider">Desa Bangkalaloe</h1>
-                  <p class="text-white text-sm opacity-80">Kabupaten Jeneponto</p>
-              </div>
-          </div>
-          <!-- Tambahkan ikon hamburger di sini -->
-          <button id="hamburger" class="md:hidden text-white text-2xl ml-auto">
-              <i class="fas fa-bars"></i>
-          </button>
-          <nav id="nav-menu" class="ml-auto hidden md:block">
-              <ul class="flex space-x-4 text-white">
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="index.html"
-                      >
-                          Home
-                          <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="profildesa.html"
-                      >
-                          Profil Desa
-                          <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="infografis.html"
-                      >
-                          Infografis
-                          <span class="absolute inset- 0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="umkm.html"
-                      >
-                          UMKM
-                          <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="potensidesa.html"
-                      >
-                          Potensi Desa
-                          <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-                  <li class="group relative">
-                      <a 
-                          class="relative z-10 font-bold nav-link px-3 py-2 
-                          group-hover:text-white 
-                          transition-all duration-300" 
-                          href="about.html"
-                      >
-                          About
-                          <span class="absolute inset-0 bg-white bg-opacity-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 rounded-lg"></span>
-                      </a>
-                  </li>
-              </ul>
-          </nav>
-      </div>
-  </header>
-
-    <div class="bg-gray-200 mb-8">\
-      
-      <div class="max-w-4xl mx-auto p-4">
-      <div>
-      <div class="flex items-center mb-1">
-        <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-        <h1 class="text-4xl font-bold text-gray-800" style="font-family: 'Poppins', sans-serif;">Infografis</h1>
-    </div>
-    <h2 class="text-2xl text-gray-600 mb-4" style="font-family: 'Poppins', sans-serif;">Data Umum Desa Bangkalaloe</h2>
-  </div>
-</div>
-
-      <div class="bg-gray-100 max-w-4xl mx-auto p-4 rounded-lg shadow-md ">
-      <div class="max-w-4xl mx-auto p-4">
-        <div class="flex items-center">
-          <div class="w-1 bg-blue-500 h-12 mr-4 mb-4"></div>
-          <h1 class="text-3xl font-bold text-blue-600" style="font-family: 'Poppins', sans-serif;">Jumlah Penduduk</h1>
-      </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-          <div class="bg-white p-4 rounded-lg shadow flex items-center">
-            <img
-              alt="Illustration of a group of people"
-              class="w-12 h-12 mr-4"
-              height="50"
-              src="images/penduduk.png"
-              width="50"
-            />
-            <div>
-              <p class="text-gray-600">TOTAL PENDUDUK</p>
-              <p class="text-2xl font-bold text-gray-800">3.107 Jiwa</p>
-            </div>
-          </div>
-          <div class="bg-white p-4 rounded-lg shadow flex items-center">
-            <img
-              alt="Illustration of a family"
-              class="w-12 h-12 mr-4"
-              height="50"
-              src="images/keluarga.png"
-              width="50"
-            />
-            <div>
-              <p class="text-gray-600">KEPALA KELUARGA</p>
-              <p class="text-2xl font-bold text-gray-800">939 KK</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="bg-white p-4 rounded-lg shadow flex items-center">
-            <img
-              alt="Illustration of a group of people"
-              class="w-12 h-12 mr-4"
-              height="50"
-              src="imageinfografis/Dusun.png"
-              width="50"
-            />
-            <div>
-              <p class="text-gray-600">JUMLAH DUSUN</p>
-              <p class="text-2xl font-bold text-gray-800">3 Dusun</p>
-            </div>
-          </div>
-          <div class="bg-white p-4 rounded-lg shadow flex items-center">
-            <img
-              alt="Illustration of a family"
-              class="w-12 h-12 mr-4"
-              height="50"
-              src="imageinfografis/RK.png"
-              width="50"
-            />
-            <div>
-              <p class="text-gray-600">JUMLAH RK</p>
-              <p class="text-2xl font-bold text-gray-800">16 RK</p>
-            </div>
-          </div>
-        </div>
-
-
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-gray-200 mb-8">
-      <div class="bg-gray-100 max-w-4xl mx-auto p-4 rounded-lg shadow-md">
-        <div class="flex items-center">
-          <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-          <h1 class="text-3xl font-bold text-blue-600" style="font-family: 'Poppins', sans-serif;">Berdasarkan Pekerjaan</h1>
-      </div>
-        <div class="flex justify-center">
-          <img alt="" class="rounded-lg" height="400" src="imageinfografis/piepekerjaan.png" width="mx-auto"/>
-         </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-gray-200 mb-8">
-      <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md bg-gray-100">
+    <!-- Header -->
+    <div class="max-w-4xl mx-auto px-4 py-6">
         <div class="flex items-center mb-1">
-          <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-          <h1 class="text-3xl font-bold text-blue-600" style="font-family: 'Poppins', sans-serif;">Berdasarkan Lulusan Pendidikan Umum</h1>
-      </div>
-        <div class="flex justify-center mt-6">
-          <img alt="" class="rounded-lg" height="400" src="imageinfografis/piechart pendidikan.png" width="mx-auto"/>
-         </div>
-         <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-4">
-          <!-- Left Column -->
-          <div class="bg-white shadow-md rounded-lg w-full md:w-1/2">
-            <div class="flex items-center p-4">
-              <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-              <h1 class="font-bold text-blue-600" style="font-family: 'Poppins', sans-serif; font-size:18px;">Lulusan Pendidikan Khusus</h1>
-          </div>
-           <div class="p-4 border-b">
-            <div class="flex items-center">
-             <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/pesantren.png"/>
-             <div>
-              <p class="text-gray-600">
-               PONDOK PESANTREN
-              </p>
-              <p class="text-2xl font-bold">
-               2 ORANG
-              </p>
-             </div>
+            <div class="section-bar bg-blue-500"></div>
+            <h1 class="text-3xl sm:text-4xl font-bold text-gray-800">Infografis</h1>
+        </div>
+        <h2 class="text-xl sm:text-2xl text-gray-600 mb-4">Data Umum Desa Bangkalaloe</h2>
+    </div>
+
+    <!-- Jumlah Penduduk -->
+    <div class="max-w-4xl mx-auto px-4 mb-6">
+        <div class="bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-blue-600">Jumlah Penduduk</h2>
             </div>
-           </div>
-           <div class="p-4">
-            <div class="flex items-center">
-             <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/keagamaan.png"/>
-             <div>
-              <p class="text-gray-600">
-               PENDIDIKAN KEAGAMAAN
-              </p>
-              <p class="text-2xl font-bold">
-               27 ORANG
-              </p>
-             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Ikon Penduduk" class="icon" src="images/penduduk.png"/>
+                    <div>
+                        <p class="text-gray-600 text-sm">TOTAL PENDUDUK</p>
+                        <p class="text-xl sm:text-2xl font-bold text-gray-800">3.107 Jiwa</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img alt="Ikon Keluarga" class="icon" src="images/keluarga.png" loading="lazy"/>
+                    <div>
+                        <p class="text-gray-600 text-sm">KEPALA KELUARGA</p>
+                        <p class="text-xl sm:text-2xl font-bold text-gray-800">939 KK</p>
+                    </div>
+                </div>
             </div>
-           </div>
-          </div>
-
-          <!-- Right Column -->
-           <div class="shadow-md rounded-lg w-full md:w-1/2 bg-white">
-            <div class="flex items-center p-4">
-              <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-              <h1 class="font-bold text-blue-600" style="font-family: 'Poppins', sans-serif; font-size:18px;">Tidak Lulus Dan Tidak Sekolah</h1>
-          </div>
-           <div class="p-4 border-b">
-            <div class="flex items-center">
-             <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/tidaklulus.png"/>
-             <div>
-              <p class="text-gray-600">
-                TIDAK LULUS
-              </p>
-              <p class="text-2xl font-bold">
-               9 ORANG
-              </p>
-             </div>
-            </div>
-           </div>
-           <div class="p-4">
-            <div class="flex items-center">
-             <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/tidaksekolah.png"/>
-             <div>
-              <p class="text-gray-600">
-               TIDAK BERSEKOLAH
-              </p>
-              <p class="text-2xl font-bold">
-               1017 ORANG
-              </p>
-             </div>
-            </div>
-           </div>
-          </div>
-      </div>
-    </div>
-
-   
-    </div>
-  </div>
-
-
-  <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md mt-8 bg-gray-100">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      Sarana dan Prasarana
-     </h1>
-    </div>
-    
-    <div class="grid grid-cols-1 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/kantordesa.png"/>
-      <div>
-       <p class="text-gray-600">
-        KANTOR DESA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        1 UNIT
-       </p>
-      </div>
-     </div>
-    </div>
-
-    <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Sarana Kesehatan
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/puskesmas.png"/>
-       <div>
-        <p class="text-gray-600">
-         PUSKESMAS PEMBANTU
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/poskesdes.png"/>
-       <div>
-        <p class="text-gray-600">
-         POSKESDES
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Pendidikan
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-5 gap-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/paud.png"/>
-       <div>
-        <p class="text-gray-600">
-         PAUD
-        </p>
-        <p class="text-1xl font-bold text-gray-800">
-         1
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/tk.png"/>
-       <div>
-        <p class="text-gray-600">
-         TK
-        </p>
-        <p class="text-1xl font-bold text-gray-800">
-         2 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a house" class="w-12 h-12 mr-4" src="imageinfografis/sd.png"/>
-       <div>
-        <p class="text-gray-600">
-         SD
-        </p>
-        <p class="text-1xl font-bold text-gray-800">
-         3 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a city" class="w-12 h-12 mr-4" src="imageinfografis/smp.png"/>
-       <div>
-        <p class="text-gray-600">
-         SMP
-        </p>
-        <p class="text-1xl font-bold text-gray-800">
-         2 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a village" class="w-12 h-12 mr-4" src="imageinfografis/smk.png"/>
-       <div>
-        <p class="text-gray-600">
-         SMK
-        </p>
-        <p class="text-1xl font-bold text-gray-800">
-          
-        </p>
-       </div>
-      </div>
-     </div>
-     
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Ibadah
-     </h2>
-
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/masjid.png"/>
-       <div>
-        <p class="text-gray-600">
-         MASJID
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         3 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/mushollah.png"/>
-       <div>
-        <p class="text-gray-600">
-         MUSHOLLAH
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          3 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-    
-     
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Umum	
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/bola.png"/>
-       <div>
-        <p class="text-gray-600">
-         SEPAK BOLA        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-      
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/bulutangkis.png"/>
-       <div>
-        <p class="text-gray-600">
-         BULUTANGKIS
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          1 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/voli.png"/>
-       <div>
-        <p class="text-gray-600">
-         VOLLI
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/basket.png"/>
-       <div>
-        <p class="text-gray-600">
-         BASKET
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          1 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/seni.png"/>
-       <div>
-        <p class="text-gray-600">
-         KESENIAN / BUDAYA        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/sumurdesa.png"/>
-       <div>
-        <p class="text-gray-600">
-         SUMUR DESA
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          2 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/pasar.png"/>
-       <div>
-        <p class="text-gray-600">
-         PASAR DESA
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         1 BUAH
-        </p>
-       </div>
-      </div>
-      
-     </div>
-
-     
-     
-
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Transportasi
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/jalandesa.png"/>
-       <div>
-        <p class="text-gray-600">
-          JALAN DESA (ASPAL / BETON)
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         2 KM
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/jalankabup.png"/>
-       <div>
-        <p class="text-gray-600">
-          JALAN KABUPATEN (ASPAL / BETON)
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          5 KM
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/jalanprov.png"/>
-       <div>
-        <p class="text-gray-600">
-          JALAN PROVINSI (ASPAL / BETON)
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         5 KM
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/jembatan.png"/>
-       <div>
-        <p class="text-gray-600">
-         JEMBATAN BESI
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          1 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-      
-     
-
-   
-
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Air Bersih
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/airbersih.png"/>
-       <div>
-        <p class="text-gray-600">
-         PENGOLAHAN AIR BERSIH       </p>
-        <p class="text-2xl font-bold text-gray-800">
-         4 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/sumurgali.png"/>
-       <div>
-        <p class="text-gray-600">
-         SUMUR GALI
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          86 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <h2 class="text-2xl font-bold text-blue-800 mt-4">
-      Prasarana Sanitasi dan Irigasi
-     </h2>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/mck.png"/>
-       <div>
-        <p class="text-gray-600">
-          MCK UMUM
-             </p>
-        <p class="text-2xl font-bold text-gray-800">
-         2 BUAH
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/jamban.png"/>
-       <div>
-        <p class="text-gray-600">
-         JAMBAN KELUARGA        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          741 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/saluran drainase.png"/>
-       <div>
-        <p class="text-gray-600">
-         SALURAN DRAINASE        </p>
-        <p class="text-2xl font-bold text-gray-800">
-         4000 METER
-        </p>
-       </div>
-      </div>
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="imageinfografis/pintu air.png"/>
-       <div>
-        <p class="text-gray-600">
-         PINTU AIR
-        </p>
-        <p class="text-2xl font-bold text-gray-800">
-          5 BUAH
-        </p>
-       </div>
-      </div>
-     </div>
-
-     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-      <div class="bg-white p-4 rounded-lg shadow flex items-center">
-       <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="imageinfografis/saluran irigasi.png"/>
-       <div>
-        <p class="text-gray-600">
-         SALURAN IRIGASI</p>
-        <p class="text-2xl font-bold text-gray-800">
-         3500 METER
-        </p>
-       </div>
-      </div>
-      
-
-     
-
-
-    
-   </div>
-   <!-- <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md mt-8 bg-white">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      222 Sarana dan Prasarana
-     </h1>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Group+of+People&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        TOTAL PENDUDUK
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3.107 Jiwa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Family&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KEPALA KELUARGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        939 KK
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-
-
-
-
-   <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md bg-white mt-8">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      333  Penduduk Dan Kepala Keluarga
-     </h1>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Group+of+People&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        TOTAL PENDUDUK
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3.107 Jiwa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Family&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KEPALA KELUARGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        939 KK
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a house" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=House&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        RUMAH TANGGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        1.200 RT
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-
-
-
-
-   <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md bg-white mt-8">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      444 Jumlah Penduduk Dan Kepala Keluarga
-     </h1>
-    </div>
-    
-    <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Group+of+People&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        TOTAL PENDUDUK
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3.107 Jiwa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Family&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KEPALA KELUARGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        939 KK
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a house" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=House&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        RUMAH TANGGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        1.200 RT
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a city" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=City&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KOTA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        5 Kota
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-
-
-
-   <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md bg-white mt-8">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      555 Jumlah Penduduk Dan Kepala Keluarga
-     </h1>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-5 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Group+of+People&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        TOTAL PENDUDUK
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3.107 Jiwa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Family&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KEPALA KELUARGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        939 KK
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a house" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=House&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        RUMAH TANGGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        1.200 RT
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a city" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=City&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KOTA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        5 Kota
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a village" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Village&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        DESA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        10 Desa
-       </p>
-      </div>
-     </div>
-    </div>
-   </div>
-
-
-
-   <div class="max-w-4xl mx-auto p-4 rounded-lg shadow-md bg-white mt-8">
-    <div class="flex items-center mb-4">
-     <div class="w-1 bg-blue-500 h-12 mr-4">
-     </div>
-     <h1 class="text-3xl font-bold text-blue-600">
-      666 Jumlah Penduduk Dan Kepala Keluarga
-     </h1>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-6 gap-4">
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a group of people" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Group+of+People&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        TOTAL PENDUDUK
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3.107 Jiwa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a family" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Family&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KEPALA KELUARGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        939 KK
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a house" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=House&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        RUMAH TANGGA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        1.200 RT
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a city" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=City&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KOTA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        5 Kota
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a village" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=Village&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        DESA
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        10 Desa
-       </p>
-      </div>
-     </div>
-     <div class="bg-white p-4 rounded-lg shadow flex items-center">
-      <img alt="Illustration of a district" class="w-12 h-12 mr-4" src="https://placehold.co/50x50?text=District&amp;font=roboto"/>
-      <div>
-       <p class="text-gray-600">
-        KECAMATAN
-       </p>
-       <p class="text-2xl font-bold text-gray-800">
-        3 Kecamatan
-       </p>
-      </div>
-     </div>
-    </div>
-   </div> -->
-  </div>
-
-  <div class="max-w-4xl mx-auto p-4">
-    <div>
-    <div class="flex items-center mb-1">
-      <div class="w-1 bg-blue-500 h-12 mr-4"></div>
-      <h1 class="text-4xl font-bold text-gray-800" style="font-family: 'Poppins', sans-serif;">Infografis</h1>
-  </div>
-  <h2 class="text-2xl text-gray-600 mb-4" style="font-family: 'Poppins', sans-serif;">APBDes Bangkalaloe</h2>
-</div>
-</div>
-
-  <div class="max-w-4xl mx-auto bg-gray-100 p-6 mb-8 shadow-lg rounded-lg">
-    <div class="text-center">
-        <h1 class="text-3xl font-bold">INFOGRAFIS</h1>
-        <h2 class="text-2xl font-bold text-blue-600">ANGGARAN PENDAPATAN DAN BELANJA DESA (APBDes)</h2>
-        <h2 class="text-2xl font-bold text-red-600">DESA BANGKALALOE T.A. 2024</h2>
-        <h3 class="text-xl font-bold">KECAMATAN BONTORAMBA</h3>
-        <h3 class="text-xl font-bold">KABUPATEN JENEPONTO</h3>
-    </div>
-    <div class="mt-4">
-        <h4 class="text-lg font-bold">DANA TRANSFER DESA TAHUN ANGGARAN 2024</h4>
-        <div class="flex justify-around mt-2">
-            <div class="text-center">
-                <p class="text-green-600 font-bold">Rp821.676.000</p>
-                <p>DANA DESA</p>
-            </div>
-            <div class="text-center">
-                <p class="text-yellow-600 font-bold">Rp851.994.958</p>
-                <p>ALOKASI DANA DESA</p>
-            </div>
-            <div class="text-center">
-                <p class="text-red-600 font-bold">Rp31.226.741</p>
-                <p>DANA BAGI HASIL PAJAK</p>
-            </div>
-            <div class="text-center">
-                <p class="text-red-600 font-bold">Rp1.704.897.699</p>
-                <p>TOTAL</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="info-card">
+                    <img alt="Ikon Dusun" class="icon" src="imageinfografis/Dusun.png" loading="lazy"/>
+                    <div>
+                        <p class="text-gray-600 text-sm">JUMLAH DUSUN</p>
+                        <p class="text-xl sm:text-2xl font-bold text-gray-800">3 Dusun</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img alt="Ikon RK" class="icon" src="imageinfografis/RK.png" loading="lazy"/>
+                    <div>
+                        <p class="text-gray-600 text-sm">JUMLAH RK</p>
+                        <p class="text-xl sm:text-2xl font-bold text-gray-800">16 RK</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="mt-4">
-        <h4 class="text-lg font-bold">BELANJA DESA</h4>
-        <table class="min-w-full bg-white border border-gray-300 mt-2">
-            <thead>
-                <tr class="bg-gray-200">
-                    <th class="py-2 px-4 border-b-2 border-gray-300 text-left">Bidang</th>
-                    <th class="py-2 px-4 border-b-2 border-gray-300 text-left">Kegiatan</th>
-                    <th class="py-2 px-4 border-b-2 border-gray-300 text-right">Anggaran (Rp)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300" rowspan="3">BIDANG PENYELENGGARAAN PEMERINTAHAN DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYELENGGARAAN BELANJA SILTAP, TUNJANGAN DAN OPERASIONAL PEMERINTAH DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">662.517.600</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYEDIAAN BELANJA PEMELIHARAAN SARANA/PRASARANA KANTOR DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">159.695.700</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYELENGGARAAN TATA PRAJA PEMERINTAHAN, PERENCANAAN, KEUANGAN DAN PELAPORAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">31.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300" rowspan="6">BIDANG PELAKSANAAN PEMBANGUNAN DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYELENGGARAAN PAUD/TK/TPA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">103.200.000</td> 
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYELENGGARAAN POSYANDU</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">36.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENGADAAN & PEMELIHARAAN MOBIL DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">10.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENYELENGGARAAN PEKERJAAN UMUM DAN PENATAAN RUANG</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">192.864.500</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENGADAAN INFORMASI PUBLIK & PEMELIHARAAN HUTAN DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">6.000.000</td>
-                </tr>
-                <tr>
-                    
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300" rowspan="4">BIDANG PEMBINAAN KEMASYARAKATAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300">KOORD. PEMBINAAN KEAMANAN, KETERTIBAN & KETENTERAMAN MASYARAKAT</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">8.600.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">DUKUNGAN SUB BIDANG KEBUDAYAAN DAN KEAGAMAAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">43.100.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">DUKUNGAN KEGIATAN LEMBAGA KEPEMUDAAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">5.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">DUKUNGAN KEGIATAN LEMBAGA KELEMBAGAAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">10.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300" rowspan="4">BIDANG PEMBERDAYAAN MASYARAKAT</td>
-                    <td class="py-2 px-4 border-b border-gray-300">PENGUATAN KETAHANAN PANGAN TINGKAT DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">218.945.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENINGKATAN KAPASITAS APARATUR DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">8.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENINGKATAN KAPASITAS KELOMPOK PEMERHATI DAN PERLINDUNGAN ANAK</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">35.600.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENINGKATAN PENGELOLAAN BADAN USAHA MILIK DESA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">2.500.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300" rowspan="2">BIDANG PENANGGULANGAN BENCANA, DARURAT DAN MENDESAK</td>
-                    <td class="py-2 px-4 border-b border-gray-300">PENANGANAN KEADAAN DARURAT (BIAYA TAK TERDUGA)</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">10.000.000</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENANGANAN KEADAAN MENDESAK (BANTUAN LANGSUNG TUNAI - DESA DARI DD)</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">144.000.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="mt-4">
-        <h4 class="text-lg font-bold">RINCIAN KEUANGAN</h4>
-        <table class="min-w-full bg-white border border-gray-300 mt-2">
-            <tbody>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">JUMLAH BELANJA</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">Rp. 1.687.022.800</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">SURPLUS / DEFISIT</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">Rp. 44.548</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENERIMAAN PEMBIAYAAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">Rp. 7.169.649</td>
-                </tr>
-                <tr>
-                    <td class="py-2 px-4 border-b border-gray-300">PENGELUARAN PEMBIAYAAN</td>
-                    <td class="py-2 px-4 border-b border-gray-300 text-right">Rp. 25.000.000</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
 
-<div class="bg-[#10442c] text-white pb-4">
+    <!-- Chart: Pekerjaan -->
+    <div class="max-w-4xl mx-auto px-4 mb-6">
+        <div class="bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-blue-600">Berdasarkan Pekerjaan</h2>
+            </div>
+            <div class="chart-container mx-auto" style="max-width: 450px;">
+                <canvas id="chartPekerjaan"></canvas>
+            </div>
+            <div id="legendPekerjaan" class="mt-4 flex flex-wrap justify-center gap-2 sm:gap-3"></div>
+        </div>
+    </div>
 
-      
-  <div class="container mx-auto px-8 py-8"> <!-- Tambah padding horizontal -->
-      <div class="flex justify-between items-center pb-6"> <!-- Perkecil padding bottom -->
-          <div class="flex space-x-6"> <!-- Perbesar jarak antar logo -->
-              <img alt="Logo 1" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/jenepontologo.png"/>
-              <img alt="Logo 2" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logooposko.png" />
-              <img alt="Logo 3" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logoounhas.png"/>
-              <img alt="Logo 4" class="h-12 opacity-80 hover:opacity-100 transition-opacity" height="50" src="images/logo.png"/>
-          </div>
-          <div class="text-center">
-              <h1 class="text-lg text-[#f4a222] font-bold">Desa Bangkalaloe</h1>
-              <p class="text-xs text-gray-300">Kec. Bontoramba, Kab. Jeneponto, Sulawesi Selatan</p>
-          </div>
-          <div class="flex space-x-6"> <!-- Perbesar jarak antar ikon -->
-              <!-- <a class="text-white text-sm hover:text-blue-300 transition-colors" href="">
-                  <i class="fab fa-facebook-f fa-2x"></i> Ukuran ikon diperbesar -->
-              <!-- </a> -->
-              <a class="text-white text-sm hover:text-pink-400 transition-colors" href="https://www.instagram.com/kkn113unhas.desabangkalaloe/">
-                  <i class="fab fa-instagram fa-2x"></i> <!-- Ukuran ikon diperbesar -->
-              </a>
-              <a class="text-white text-sm hover:text-red-500 transition-colors" href="https://www.google.com/maps/place/Bangkalaloe,+Kec.+Bontoramba,+Kabupaten+Jeneponto,+Sulawesi+Selatan/@-5.6023186,119.6967312,5680m/data=!3m2!1e3!4b1!4m6!3m5!1s0x2db9348c91f6a2b9:0x4e3e1e9fbe611c9f!8m2!3d-5.6033797!4d119.7136456!16s%2Fg%2F122jxcbh!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
-                  <i class="fas fa-map-marker-alt fa-2x"></i> <!-- Ukuran ikon diperbesar -->
-              </a>
-              <!-- <a class="text-white text-sm hover:text-gray-300 transition-colors" href="#">
-                  <i class="fab fa-github fa-2x"></i> 
-              </a> -->
-          </div>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6 text-justify"> <!-- Perbesar gap -->
-          <div class="space-y-2"> <!-- Tambah spasi internal -->
-              <h2 class="text-base text-[#f4a222] font-bold">Website Profil Desa</h2>
-              <p class="text-xs text-gray-300">
-                  Website profil Desa merupakan situs web yang memuat informasi dasar mengenai desa, sejarah, visi dan misi desa, sampai dengan peta wilayah desa.
-              </p>
-          </div>
-          <div class="space-y-2">
-              <h2 class="text-base text-[#f4a222] font-bold">Developer</h2>
-              <p class="text-xs text-gray-300">
-                  Website ini dibuat oleh Ammar Tyo Pasaribu, Mahasiswa KKN Universitas Hasanuddin Gelombang 113 Desa Bangkalaloe pada Januari 2025.
-              </p>
-          </div>
-          <div class="space-y-2">
-              <h2 class="text-base text-[#f4a222] font-bold">Harapan &amp; Tujuan</h2>
-              <p class="text-xs text-gray-300">
-                  Situs web profil ini dibuat untuk tujuan promosi dan publisitas Desa Bangkalaloe agar lebih dikenal oleh khalayak ramai baik di dalam maupun di luar Desa Bangkalaloe.
-              </p>
-          </div>
-          <div class="space-y-2 flex flex-col items-center">
-              <h2 class="text-base text-[#f4a222] font-bold">
-               Kode QR
-              </h2>
-              <div class="flex space-x-4">
-               <div class="flex flex-col items-center">
-                <h3 class="text-sm text-[#f4a222] font-bold">
-                 Website
-                </h3>
-                <img alt="QR Code for Desa Bangkalaloe website" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcode.jpg" width="100"/>
-               </div>
-               <div class="flex flex-col items-center">
-                <h3 class="text-sm text-[#f4a222] font-bold">
-                 WhatsApp
-                </h3>
-                <img alt="QR Code for WhatsApp contact" class="mt-2 w-24 h-24 rounded-lg shadow-md hover:scale-105 transition-transform" height="100" src="images/qrcodewa.jpg" width="100"/>
-               </div>
-              </div>
-             </div>
+    <!-- Chart: Pendidikan -->
+    <div class="max-w-4xl mx-auto px-4 mb-6">
+        <div class="bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-blue-600">Berdasarkan Lulusan Pendidikan Umum</h2>
+            </div>
+            <div class="chart-container mx-auto" style="max-width: 450px;">
+                <canvas id="chartPendidikan"></canvas>
+            </div>
+            <div id="legendPendidikan" class="mt-4 flex flex-wrap justify-center gap-2 sm:gap-3"></div>
+
+            <!-- Pendidikan Khusus & Tidak Sekolah -->
+            <div class="flex flex-col md:flex-row gap-4 mt-6">
+                <div class="bg-white shadow-md rounded-lg w-full md:w-1/2">
+                    <div class="flex items-center p-4">
+                        <div class="section-bar bg-blue-500"></div>
+                        <h3 class="font-bold text-blue-600 text-base sm:text-lg">Lulusan Pendidikan Khusus</h3>
+                    </div>
+                    <div class="p-4 border-t">
+                        <div class="info-card mb-3">
+                            <img alt="Ikon Pesantren" class="icon" src="imageinfografis/pesantren.png" loading="lazy"/>
+                            <div>
+                                <p class="text-gray-600 text-sm">PONDOK PESANTREN</p>
+                                <p class="text-xl font-bold">2 ORANG</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <img alt="Ikon Keagamaan" class="icon" src="imageinfografis/keagamaan.png" loading="lazy"/>
+                            <div>
+                                <p class="text-gray-600 text-sm">PENDIDIKAN KEAGAMAAN</p>
+                                <p class="text-xl font-bold">27 ORANG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg w-full md:w-1/2">
+                    <div class="flex items-center p-4">
+                        <div class="section-bar bg-blue-500"></div>
+                        <h3 class="font-bold text-blue-600 text-base sm:text-lg">Tidak Lulus Dan Tidak Sekolah</h3>
+                    </div>
+                    <div class="p-4 border-t">
+                        <div class="info-card mb-3">
+                            <img alt="Ikon Tidak Lulus" class="icon" src="imageinfografis/tidaklulus.png" loading="lazy"/>
+                            <div>
+                                <p class="text-gray-600 text-sm">TIDAK LULUS</p>
+                                <p class="text-xl font-bold">9 ORANG</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <img alt="Ikon Tidak Sekolah" class="icon" src="imageinfografis/tidaksekolah.png" loading="lazy"/>
+                            <div>
+                                <p class="text-gray-600 text-sm">TIDAK BERSEKOLAH</p>
+                                <p class="text-xl font-bold">1017 ORANG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sarana dan Prasarana -->
+    <div class="max-w-4xl mx-auto px-4 mb-6">
+        <div class="bg-gray-100 p-4 sm:p-6 rounded-lg shadow-md">
+            <div class="flex items-center mb-4">
+                <div class="section-bar bg-blue-500"></div>
+                <h2 class="text-2xl sm:text-3xl font-bold text-blue-600">Sarana dan Prasarana</h2>
             </div>
 
-          
-          
-          <div id="qrCodeModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
-              <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
-                  <button id="closeQrCodeModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
-                  <img src="images/qrcode.jpg" alt="QR Code" class="w-full h-auto" />
-                  
-              </div>
-          </div>
-          
-          <div id="qrCodeWAModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center overflow-y-auto">
-              <div class="bg-white p-4 rounded-lg shadow-lg max-w-md w-full relative">
-                  <button id="closeQrCodeWAModal" class="absolute top-2 right-2 text-gray-500 text-2xl">&times;</button>
-                  <img src="images/qrcodewa.jpg" alt="QR Code WhatsApp" class="w-full h-auto" />
-              </div>
-          </div>
-      </div>
-      <div class="text-center mt-6 border-t-2 border-gray-600 pt-4">
-          <p class="text-xs text-gray-400">
-              © 2025 Desa Bangkalaloe - All rights reserved
-          </p>
-      </div>
-  </div>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.getElementById('hamburger');
-            const navMenu = document.getElementById('nav-menu');
+            <!-- Kantor Desa -->
+            <div class="info-card mb-4">
+                <img alt="Kantor Desa" class="icon" src="imageinfografis/kantordesa.png" loading="lazy"/>
+                <div>
+                    <p class="text-gray-600 text-sm">KANTOR DESA</p>
+                    <p class="text-xl font-bold text-gray-800">1 UNIT</p>
+                </div>
+            </div>
 
-            hamburger.addEventListener('click', function() {
-                navMenu.classList.toggle('active');
-            });
+            <!-- Sarana Kesehatan -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Sarana Kesehatan</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Puskesmas" class="icon" src="imageinfografis/puskesmas.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">PUSKESMAS PEMBANTU</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Poskesdes" class="icon" src="imageinfografis/poskesdes.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">POSKESDES</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+            </div>
 
-            // Tutup menu saat mengklik di luar menu
-            document.addEventListener('click', function(event) {
-                if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
-                    navMenu.classList.remove('active');
+            <!-- Prasarana Pendidikan -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Pendidikan</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3 sm:gap-4 mb-4">
+                <div class="info-card flex-col text-center !gap-2 !p-3">
+                    <img alt="PAUD" class="icon mx-auto" src="imageinfografis/paud.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-xs">PAUD</p><p class="text-lg font-bold text-gray-800">1</p></div>
+                </div>
+                <div class="info-card flex-col text-center !gap-2 !p-3">
+                    <img alt="TK" class="icon mx-auto" src="imageinfografis/tk.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-xs">TK</p><p class="text-lg font-bold text-gray-800">2</p></div>
+                </div>
+                <div class="info-card flex-col text-center !gap-2 !p-3">
+                    <img alt="SD" class="icon mx-auto" src="imageinfografis/sd.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-xs">SD</p><p class="text-lg font-bold text-gray-800">3</p></div>
+                </div>
+                <div class="info-card flex-col text-center !gap-2 !p-3">
+                    <img alt="SMP" class="icon mx-auto" src="imageinfografis/smp.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-xs">SMP</p><p class="text-lg font-bold text-gray-800">2</p></div>
+                </div>
+                <div class="info-card flex-col text-center !gap-2 !p-3">
+                    <img alt="SMK" class="icon mx-auto" src="imageinfografis/smk.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-xs">SMK</p><p class="text-lg font-bold text-gray-800">1</p></div>
+                </div>
+            </div>
+
+            <!-- Prasarana Ibadah -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Ibadah</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Masjid" class="icon" src="imageinfografis/masjid.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">MASJID</p><p class="text-xl font-bold text-gray-800">3 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Mushollah" class="icon" src="imageinfografis/mushollah.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">MUSHOLLAH</p><p class="text-xl font-bold text-gray-800">3 BUAH</p></div>
+                </div>
+            </div>
+
+            <!-- Prasarana Umum -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Umum</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Sepak Bola" class="icon" src="imageinfografis/bola.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">SEPAK BOLA</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Bulutangkis" class="icon" src="imageinfografis/bulutangkis.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">BULUTANGKIS</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Voli" class="icon" src="imageinfografis/voli.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">VOLI</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Basket" class="icon" src="imageinfografis/basket.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">BASKET</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Kesenian" class="icon" src="imageinfografis/seni.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">KESENIAN / BUDAYA</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Sumur Desa" class="icon" src="imageinfografis/sumurdesa.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">SUMUR DESA</p><p class="text-xl font-bold text-gray-800">2 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Pasar Desa" class="icon" src="imageinfografis/pasar.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">PASAR DESA</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+            </div>
+
+            <!-- Prasarana Transportasi -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Transportasi</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Jalan Desa" class="icon" src="imageinfografis/jalandesa.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">JALAN DESA (ASPAL / BETON)</p><p class="text-xl font-bold text-gray-800">2 KM</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Jalan Kabupaten" class="icon" src="imageinfografis/jalankabup.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">JALAN KABUPATEN (ASPAL / BETON)</p><p class="text-xl font-bold text-gray-800">5 KM</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Jalan Provinsi" class="icon" src="imageinfografis/jalanprov.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">JALAN PROVINSI (ASPAL / BETON)</p><p class="text-xl font-bold text-gray-800">5 KM</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Jembatan Besi" class="icon" src="imageinfografis/jembatan.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">JEMBATAN BESI</p><p class="text-xl font-bold text-gray-800">1 BUAH</p></div>
+                </div>
+            </div>
+
+            <!-- Prasarana Air Bersih -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Air Bersih</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                <div class="info-card">
+                    <img alt="Air Bersih" class="icon" src="imageinfografis/airbersih.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">PENGOLAHAN AIR BERSIH</p><p class="text-xl font-bold text-gray-800">4 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Sumur Gali" class="icon" src="imageinfografis/sumurgali.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">SUMUR GALI</p><p class="text-xl font-bold text-gray-800">86 BUAH</p></div>
+                </div>
+            </div>
+
+            <!-- Prasarana Sanitasi dan Irigasi -->
+            <h3 class="text-xl sm:text-2xl font-bold text-blue-800 mt-6 mb-3">Prasarana Sanitasi dan Irigasi</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="info-card">
+                    <img alt="MCK Umum" class="icon" src="imageinfografis/mck.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">MCK UMUM</p><p class="text-xl font-bold text-gray-800">2 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Jamban Keluarga" class="icon" src="imageinfografis/jamban.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">JAMBAN KELUARGA</p><p class="text-xl font-bold text-gray-800">741 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Saluran Drainase" class="icon" src="imageinfografis/saluran drainase.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">SALURAN DRAINASE</p><p class="text-xl font-bold text-gray-800">4000 METER</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Pintu Air" class="icon" src="imageinfografis/pintu air.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">PINTU AIR</p><p class="text-xl font-bold text-gray-800">5 BUAH</p></div>
+                </div>
+                <div class="info-card">
+                    <img alt="Saluran Irigasi" class="icon" src="imageinfografis/saluran irigasi.png" loading="lazy"/>
+                    <div><p class="text-gray-600 text-sm">SALURAN IRIGASI</p><p class="text-xl font-bold text-gray-800">3500 METER</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- APBDes Section -->
+    <div class="max-w-4xl mx-auto px-4 py-6">
+        <div class="flex items-center mb-1">
+            <div class="section-bar bg-blue-500"></div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800">Infografis</h2>
+        </div>
+        <h3 class="text-xl sm:text-2xl text-gray-600 mb-4">APBDes Bangkalaloe</h3>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-4 mb-8">
+        <div class="bg-gray-100 p-4 sm:p-6 shadow-lg rounded-lg">
+            <div class="text-center mb-6">
+                <h2 class="text-2xl sm:text-3xl font-bold">INFOGRAFIS</h2>
+                <h3 class="text-xl sm:text-2xl font-bold text-blue-600">ANGGARAN PENDAPATAN DAN BELANJA DESA (APBDes)</h3>
+                <h3 class="text-xl sm:text-2xl font-bold text-red-600">DESA BANGKALALOE T.A. 2024</h3>
+                <p class="text-lg sm:text-xl font-bold">KECAMATAN BONTORAMBA</p>
+                <p class="text-lg sm:text-xl font-bold">KABUPATEN JENEPONTO</p>
+            </div>
+
+            <!-- Dana Transfer -->
+            <h4 class="text-base sm:text-lg font-bold mb-3">DANA TRANSFER DESA TAHUN ANGGARAN 2024</h4>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                <div class="bg-white rounded-lg p-3 text-center shadow">
+                    <p class="text-green-600 font-bold text-sm sm:text-base">Rp821.676.000</p>
+                    <p class="text-xs sm:text-sm text-gray-600">DANA DESA</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 text-center shadow">
+                    <p class="text-yellow-600 font-bold text-sm sm:text-base">Rp851.994.958</p>
+                    <p class="text-xs sm:text-sm text-gray-600">ALOKASI DANA DESA</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 text-center shadow">
+                    <p class="text-red-600 font-bold text-sm sm:text-base">Rp31.226.741</p>
+                    <p class="text-xs sm:text-sm text-gray-600">DANA BAGI HASIL PAJAK</p>
+                </div>
+                <div class="bg-white rounded-lg p-3 text-center shadow">
+                    <p class="text-red-600 font-bold text-sm sm:text-base">Rp1.704.897.699</p>
+                    <p class="text-xs sm:text-sm text-gray-600">TOTAL</p>
+                </div>
+            </div>
+
+            <!-- Belanja Desa Table -->
+            <h4 class="text-base sm:text-lg font-bold mb-3">BELANJA DESA</h4>
+            <div class="table-responsive mb-6">
+                <table class="min-w-full bg-white border border-gray-300 text-sm">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="py-2 px-3 sm:px-4 border-b-2 border-gray-300 text-left">Bidang</th>
+                            <th class="py-2 px-3 sm:px-4 border-b-2 border-gray-300 text-left">Kegiatan</th>
+                            <th class="py-2 px-3 sm:px-4 border-b-2 border-gray-300 text-right">Anggaran (Rp)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300" rowspan="3">BIDANG PENYELENGGARAAN PEMERINTAHAN DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYELENGGARAAN BELANJA SILTAP, TUNJANGAN DAN OPERASIONAL PEMERINTAH DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">662.517.600</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYEDIAAN BELANJA PEMELIHARAAN SARANA/PRASARANA KANTOR DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">159.695.700</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYELENGGARAAN TATA PRAJA PEMERINTAHAN, PERENCANAAN, KEUANGAN DAN PELAPORAN</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">31.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300" rowspan="5">BIDANG PELAKSANAAN PEMBANGUNAN DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYELENGGARAAN PAUD/TK/TPA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">103.200.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYELENGGARAAN POSYANDU</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">36.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENGADAAN &amp; PEMELIHARAAN MOBIL DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">10.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENYELENGGARAAN PEKERJAAN UMUM DAN PENATAAN RUANG</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">192.864.500</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENGADAAN INFORMASI PUBLIK &amp; PEMELIHARAAN HUTAN DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">6.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300" rowspan="4">BIDANG PEMBINAAN KEMASYARAKATAN</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">KOORD. PEMBINAAN KEAMANAN, KETERTIBAN &amp; KETENTERAMAN MASYARAKAT</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">8.600.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">DUKUNGAN SUB BIDANG KEBUDAYAAN DAN KEAGAMAAN</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">43.100.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">DUKUNGAN KEGIATAN LEMBAGA KEPEMUDAAN</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">5.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">DUKUNGAN KEGIATAN LEMBAGA KELEMBAGAAN</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">10.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300" rowspan="4">BIDANG PEMBERDAYAAN MASYARAKAT</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENGUATAN KETAHANAN PANGAN TINGKAT DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">218.945.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENINGKATAN KAPASITAS APARATUR DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">8.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENINGKATAN KAPASITAS KELOMPOK PEMERHATI DAN PERLINDUNGAN ANAK</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">35.600.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENINGKATAN PENGELOLAAN BADAN USAHA MILIK DESA</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">2.500.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300" rowspan="2">BIDANG PENANGGULANGAN BENCANA, DARURAT DAN MENDESAK</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENANGANAN KEADAAN DARURAT (BIAYA TAK TERDUGA)</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">10.000.000</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300">PENANGANAN KEADAAN MENDESAK (BANTUAN LANGSUNG TUNAI - DESA DARI DD)</td>
+                            <td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">144.000.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Rincian Keuangan -->
+            <h4 class="text-base sm:text-lg font-bold mb-3">RINCIAN KEUANGAN</h4>
+            <div class="table-responsive">
+                <table class="min-w-full bg-white border border-gray-300 text-sm">
+                    <tbody>
+                        <tr><td class="py-2 px-3 sm:px-4 border-b border-gray-300 font-medium">JUMLAH BELANJA</td><td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">Rp. 1.687.022.800</td></tr>
+                        <tr><td class="py-2 px-3 sm:px-4 border-b border-gray-300 font-medium">SURPLUS / DEFISIT</td><td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">Rp. 44.548</td></tr>
+                        <tr><td class="py-2 px-3 sm:px-4 border-b border-gray-300 font-medium">PENERIMAAN PEMBIAYAAN</td><td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">Rp. 7.169.649</td></tr>
+                        <tr><td class="py-2 px-3 sm:px-4 border-b border-gray-300 font-medium">PENGELUARAN PEMBIAYAAN</td><td class="py-2 px-3 sm:px-4 border-b border-gray-300 text-right">Rp. 25.000.000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadComponents('infografis.html');
+
+            // ---- Chart: Pekerjaan ----
+            const pekerjaanData = {
+                labels: ['Petani', 'Tidak Bekerja', 'Wiraswasta', 'PNS', 'Peternak', 'Pensiunan', 'Swasta', 'TNI/POLRI', 'Jasa', 'Pekerja Seni'],
+                values: [1521, 340, 331, 247, 211, 206, 168, 41, 37, 5],
+                colors: ['#FF69B4', '#00CED1', '#9B59B6', '#FF8C00', '#808080', '#CCCC00', '#E74C3C', '#27AE60', '#8B4513', '#3498DB']
+            };
+            createDoughnutChart('chartPekerjaan', 'legendPekerjaan', pekerjaanData);
+
+            // ---- Chart: Pendidikan ----
+            const pendidikanData = {
+                labels: ['Sekolah Dasar/Sederajat', 'SMP/Sederajat', 'Taman Kanak-Kanak', 'SMA/Sederajat', 'Sarjana S1', 'Akademi/D1-D3', 'Sarjana S2'],
+                values: [1072, 551, 510, 497, 225, 98, 9],
+                colors: ['#FF8C00', '#27AE60', '#3498DB', '#E74C3C', '#8B4513', '#9B59B6', '#FF69B4']
+            };
+            createDoughnutChart('chartPendidikan', 'legendPendidikan', pendidikanData);
+        });
+
+        function createDoughnutChart(canvasId, legendId, data) {
+            const total = data.values.reduce((a, b) => a + b, 0);
+            const ctx = document.getElementById(canvasId).getContext('2d');
+
+            const chart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        data: data.values,
+                        backgroundColor: data.colors,
+                        borderColor: '#fff',
+                        borderWidth: 2,
+                        hoverBorderWidth: 3,
+                        hoverOffset: 15
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.85)',
+                            titleFont: { size: 14, weight: 'bold' },
+                            bodyFont: { size: 13 },
+                            padding: 12,
+                            cornerRadius: 8,
+                            callbacks: {
+                                label: function (ctx) {
+                                    const pct = ((ctx.raw / total) * 100).toFixed(1);
+                                    return ` ${ctx.label}: ${ctx.raw.toLocaleString('id-ID')} orang (${pct}%)`;
+                                }
+                            }
+                        }
+                    },
+                    onClick: function (evt, elements) {
+                        if (elements.length > 0) {
+                            const idx = elements[0].index;
+                            const label = data.labels[idx];
+                            const value = data.values[idx];
+                            const pct = ((value / total) * 100).toFixed(1);
+                            
+                            // Highlight clicked legend item
+                            const legendItems = document.querySelectorAll(`#${legendId} .legend-item`);
+                            legendItems.forEach((item, i) => {
+                                if (i === idx) {
+                                    item.classList.add('ring-2', 'ring-blue-500', 'bg-blue-50');
+                                } else {
+                                    item.classList.remove('ring-2', 'ring-blue-500', 'bg-blue-50');
+                                }
+                            });
+                        }
+                    }
                 }
             });
-        });
-const qrCodeWALink = document.querySelector('.space-y-2 img[src="images/qrcodewa.jpg"]');
-const qrCodeWAModal = document.getElementById('qrCodeWAModal');
-const closeQrCodeWAModalBtn = document.getElementById('closeQrCodeWAModal');
 
-// Fungsi untuk membuka modal QR Code WhatsApp
-qrCodeWALink.addEventListener('click', function() {
-qrCodeWAModal.classList.remove('hidden');
-});
-
-// Fungsi untuk menutup modal QR Code WhatsApp
-closeQrCodeWAModalBtn.addEventListener('click', function() {
-qrCodeWAModal.classList.add('hidden');
-});
-
-// Menutup modal jika mengklik di luar area modal
-qrCodeWAModal.addEventListener('click', function(e) {
-if (e.target === qrCodeWAModal) {
-  qrCodeWAModal.classList.add('hidden');
-}
-});
-const qrCodeImage = document.querySelector('.space-y-2 img');
-  const qrCodeModal = document.getElementById('qrCodeModal');
-  const closeQrCodeModalBtn = document.getElementById('closeQrCodeModal');
-  
-  // Fungsi untuk membuka modal QR Code
-  qrCodeImage.addEventListener('click', function() {
-      qrCodeModal.classList.remove('hidden');
-  });
-  
-  // Fungsi untuk menutup modal QR Code
-  closeQrCodeModalBtn.addEventListener('click', function() {
-      qrCodeModal.classList.add('hidden');
-  });
-  
-  // Menutup modal jika mengklik di luar area modal
-  qrCodeModal.addEventListener('click', function(e) {
-      if (e.target === qrCodeModal) {
-          qrCodeModal.classList.add('hidden');
-      }
-  });</script>
-
-
-
-
-
-    <main>
-      <!-- Konten utama akan ditambahkan di sini -->
-    </main>
-    <style>
-      .nav-link.active {
-        position: relative;
-      }
-      .nav-link.active::after {
-        content: "";
-        position: absolute;
-        inset: -5px;
-        z-index: -1;
-        border-radius: 0.5rem;
-      }
-    </style>
-    <script>
-
-document.addEventListener("DOMContentLoaded", function () {
-  const infografisLink = document.querySelector('.nav-link[href="#"]'); // Ganti dengan selector yang sesuai
-  const dataUmumLink = document.getElementById('dataUmumLink');
-  const apbdesLink = document.getElementById('apbdesLink');
-
-  // Fungsi untuk mengubah warna teks "Infografis"
-  function highlightInfografis() {
-    infografisLink.classList.add('active'); // Menambahkan kelas aktif
-  }
-
-  // Event listener untuk tautan "Data Umum" dan "APBDes"
-  dataUmumLink.addEventListener('click', highlightInfografis);
-  apbdesLink.addEventListener('click', highlightInfografis);
-});
-      // Script untuk mengatur navbar aktif
-      document.addEventListener("DOMContentLoaded", function () {
-        // Dapatkan URL halaman saat ini
-        const currentLocation = location.pathname.split("/").pop();
-
-        // Pilih semua link navigasi
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        // Loop melalui setiap link
-        navLinks.forEach((link) => {
-          // Tambahkan event listener klik
-          link.addEventListener("click", function () {
-            // Hapus kelas active dari semua link
-            navLinks.forEach((l) => {
-              l.classList.remove("active");
+            // Create custom legend
+            const legendContainer = document.getElementById(legendId);
+            data.labels.forEach((label, i) => {
+                const pct = ((data.values[i] / total) * 100).toFixed(1);
+                const item = document.createElement('button');
+                item.className = 'legend-item flex items-center gap-2 px-3 py-1.5 rounded-full text-xs sm:text-sm bg-white shadow-sm hover:shadow-md transition-all cursor-pointer border border-gray-200';
+                item.innerHTML = `
+                    <span class="w-3 h-3 rounded-full flex-shrink-0" style="background:${data.colors[i]}"></span>
+                    <span class="font-medium text-gray-700">${label}</span>
+                    <span class="text-gray-500">(${data.values[i].toLocaleString('id-ID')})</span>
+                `;
+                item.addEventListener('click', () => {
+                    // Toggle visibility in chart
+                    const meta = chart.getDatasetMeta(0);
+                    const isHidden = meta.data[i].hidden;
+                    meta.data[i].hidden = !isHidden;
+                    chart.update();
+                    item.style.opacity = isHidden ? '1' : '0.4';
+                });
+                item.addEventListener('mouseenter', () => {
+                    chart.setActiveElements([{datasetIndex: 0, index: i}]);
+                    chart.update();
+                });
+                item.addEventListener('mouseleave', () => {
+                    chart.setActiveElements([]);
+                    chart.update();
+                });
+                legendContainer.appendChild(item);
             });
-
-            // Tambahkan kelas active ke link yang diklik
-            this.classList.add("active");
-          });
-
-          // Tandai link yang sesuai dengan halaman saat ini
-          if (link.getAttribute("href") === currentLocation) {
-            link.classList.add("active");
-          }
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const currentLocation = location.pathname.split("/").pop();
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        navLinks.forEach((link) => {
-          link.addEventListener("click", function () {
-            navLinks.forEach((l) => {
-              l.classList.remove("active");
-            });
-
-            this.classList.add("active");
-          });
-
-          if (link.getAttribute("href") === currentLocation) {
-            link.classList.add("active");
-          }
-        });
-
-        // Efek transparan saat scroll
-        window.addEventListener("scroll", function () {
-          const header = document.querySelector("header");
-          if (window.scrollY > 50) {
-            header.classList.add("bg-opacity-90");
-            header.classList.add("backdrop-blur-sm");
-          } else {
-            header.classList.remove("bg-opacity-90");
-            header.classList.remove("backdrop-blur-sm");
-          }
-        });
-      });
+        }
     </script>
-  </body>
-
-  
+</body>
 </html>
