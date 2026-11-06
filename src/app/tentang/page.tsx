@@ -30,6 +30,83 @@ const pillars = [
   },
 ];
 
+const suratAwal = [
+  "Lima puluh enam hari. Dulu angka itu terdengar begitu panjang — saat pertama kali kita datang membawa koper, saling menyebut nama, masih canggung bahkan untuk sekadar bertanya “sudah makan?”. Siapa sangka, lima puluh enam hari itu berlalu jauh lebih cepat daripada yang sanggup aku terima.",
+  "Aku masih ingat malam-malam di posko: rapat program kerja yang selalu molor, tawa yang pecah tanpa alasan yang jelas, piring-piring yang kita cuci bergantian, dan obrolan larut yang entah bagaimana selalu berakhir menjadi cerita tentang hidup. Aku ingat lelahnya pulang dari rumah warga, hujan yang turun tanpa permisi, dan bagaimana semua itu terasa ringan hanya karena kita menjalaninya bersama.",
+  "Kalian bukan sekadar teman satu posko. Kalian adalah rumah yang tidak pernah aku rencanakan — orang-orang asing yang dalam hitungan minggu berubah menjadi keluarga.",
+];
+
+const suratAkhir = [
+  "Aku menulis ini di sela baris-baris kode website yang kita buat untuk Bangkalaloe. Setiap halamannya menyimpan sesuatu dari kalian: foto yang kita ambil bersama, data yang kita kumpulkan dari pintu ke pintu, dan sabarnya kalian menunggu aku menyelesaikannya. Mungkin itu sebabnya aku tidak pernah benar-benar ingin website ini selesai — karena selama masih kukerjakan, rasanya kita belum benar-benar berpisah.",
+  "Tapi hari terakhir tetap datang. Kita berpelukan, berjanji akan sering bertemu, berjanji grup tidak akan pernah sepi. Aku tahu, dan mungkin kalian juga tahu, bahwa hidup pelan-pelan akan membawa kita ke arah masing-masing. Grup akan perlahan sunyi. Posko itu akan ditempati orang lain. Dan suatu hari nanti, kita hanya akan saling mengenang lewat foto-foto ini.",
+  "Tidak apa-apa. Aku hanya ingin kalian tahu: terima kasih. Terima kasih sudah sabar dengan sifat burukku, sudah menertawakan leluconku yang sebenarnya tidak lucu, sudah menjadi alasan aku bangun pagi dengan semangat di desa yang jauh dari rumah. Terima kasih untuk setiap kenangan berharga yang tidak akan pernah bisa aku ulang, sekeras apa pun aku merindukannya.",
+  "Kalau suatu hari kalian melintas di Jeneponto, singgahlah sebentar di Bangkalaloe. Kita mungkin tidak lagi di sana — tapi sebagian dari kita akan selalu tinggal di sana.",
+  "Sampai bertemu lagi. Entah kapan, entah di mana.",
+];
+
+function SuratPerpisahan() {
+  return (
+    <section aria-labelledby="surat" className="relative overflow-hidden bg-forest-950 py-24 text-white sm:py-32">
+      <Image src="/images/about/tim-kkn.jpg" alt="" fill sizes="100vw" className="object-cover opacity-20 grayscale" />
+      <div className="absolute inset-0 bg-gradient-to-b from-forest-950 via-forest-950/85 to-forest-950" aria-hidden />
+      <div className="bg-grain absolute inset-0" aria-hidden />
+
+      <div className="container-page relative">
+        <Reveal className="mx-auto max-w-2xl text-center">
+          <p className="eyebrow justify-center text-gold-300">Sepucuk surat</p>
+          <h2 id="surat" className="mt-4 text-4xl leading-tight font-semibold sm:text-5xl">
+            Untuk kalian, <em className="text-gold-300">Posko 113</em>
+          </h2>
+          <p className="mt-4 text-white/60">Lima puluh enam hari yang tidak akan pernah terulang.</p>
+        </Reveal>
+
+        {/* 56 hari bersama */}
+        <Reveal delay={0.1} className="mx-auto mt-12 max-w-md">
+          <div className="grid grid-cols-14 gap-1.5 sm:gap-2" role="img" aria-label="56 hari bersama">
+            {Array.from({ length: 56 }, (_, i) => (
+              <span
+                key={i}
+                className={`aspect-square rounded-full ${
+                  i === 55 ? "bg-gold-300 ring-4 ring-gold-300/25" : "bg-white/25"
+                }`}
+              />
+            ))}
+          </div>
+          <div className="mt-3 flex justify-between text-xs text-white/45">
+            <span>Hari ke-1</span>
+            <span className="text-gold-300/90">Hari ke-56</span>
+          </div>
+        </Reveal>
+
+        <Reveal delay={0.15} className="mx-auto mt-14 max-w-3xl">
+          <article className="relative rounded-[2rem] bg-paper p-7 text-ink shadow-2xl sm:p-14">
+            <p className="text-sm text-muted">Bangkalaloe, hari ke-56</p>
+            <p className="mt-6 font-display text-2xl text-forest-900 italic sm:text-3xl">
+              Untuk kalian, teman-teman Posko 113 Desa Bangkalaloe,
+            </p>
+            <div className="mt-8 space-y-5 text-[1.0625rem] leading-[1.85] text-ink/80">
+              {suratAwal.map((t) => (
+                <p key={t.slice(0, 24)}>{t}</p>
+              ))}
+              <blockquote className="!my-10 border-l-4 border-gold-400 pl-6 font-display text-2xl leading-snug text-forest-900 italic sm:text-3xl">
+                “Lima puluh enam hari tidak cukup untuk mengenal kalian, tapi lebih dari cukup untuk
+                merindukan kalian seumur hidup.”
+              </blockquote>
+              {suratAkhir.map((t) => (
+                <p key={t.slice(0, 24)}>{t}</p>
+              ))}
+            </div>
+            <div className="mt-12 border-t border-line pt-8">
+              <p className="text-muted">Yang akan selalu merindukan kalian,</p>
+              <p className="mt-2 font-display text-4xl text-forest-900 italic">Ammar</p>
+            </div>
+          </article>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
 export default function TentangPage() {
   return (
     <>
@@ -147,6 +224,8 @@ export default function TentangPage() {
           </Reveal>
         </div>
       </section>
+
+      <SuratPerpisahan />
     </>
   );
 }
